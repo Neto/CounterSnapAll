@@ -150,8 +150,8 @@ twitter_count = driver.find_element(By.CSS_SELECTOR,'a[href="/snapdragon_BRA/fol
 # Get Instagram followers BR e LATAM at the same time to avoid Instagram block
 
 L = instaloader.Instaloader()
-user = "Spinoff_Neto"
-password = "061231SpinoffNeto"
+user = "noise@neto.house"
+password = "noise(2020)"
 L.login(user, password)
 profile = instaloader.Profile.from_username(L.context, "snapdragon_brasil")
 profile2 = instaloader.Profile.from_username(L.context, "snapdragon_latam")
