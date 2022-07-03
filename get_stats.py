@@ -151,30 +151,26 @@ twitter_count = driver.find_element(By.CSS_SELECTOR,'a[href="/snapdragon_BRA/fol
 
 # Get Instagram followers BR e LATAM at the same time to avoid Instagram block
 
-#L = instaloader.Instaloader()
-#user = "noise@neto.house"
-#password = "noise(2020)"
-#L.login(user, password)
-#profile = instaloader.Profile.from_username(L.context, "snapdragon_brasil")
-#profile2 = instaloader.Profile.from_username(L.context, "snapdragon_latam")
-#
-#instaBR_mil = str(profile.followers)[:2]
-#instaBR_dec = str(profile.followers)[2]
-#instagram_count = instaBR_mil + "." + instaBR_dec + "K"
-#
-#instaLT_mil = str(profile2.followers)[:1]
-#instaLT_dec = str(profile2.followers)[1]
-#instagram_countL = instaLT_mil + "." + instaLT_dec + "K"
+L = instaloader.Instaloader()
+user = "noise@neto.house"
+password = "noise(2020)"
+L.login(user, password)
+profile = instaloader.Profile.from_username(L.context, "snapdragon_brasil")
+profile2 = instaloader.Profile.from_username(L.context, "snapdragon_latam")
 
-instagram_count = "48.1K"
-instagram_countL = "7.4K"
+instaBR_mil = str(profile.followers)[:2]
+instaBR_dec = str(profile.followers)[2]
+instagram_count = instaBR_mil + "." + instaBR_dec + "K"
+
+instaLT_mil = str(profile2.followers)[:1]
+instaLT_dec = str(profile2.followers)[1]
+instagram_countL = instaLT_mil + "." + instaLT_dec + "K"
 
 #LATAM 
 
 # Get Twitter followers LATAM
 driver.get('https://twitter.com/snapdragon_LAT')
 twitter_countL = driver.find_element(By.CSS_SELECTOR,'a[href="/snapdragon_LAT/followers"] > span > span').text
-
 
 # Close webdriver
 sleep(5)

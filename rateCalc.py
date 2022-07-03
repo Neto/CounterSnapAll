@@ -23,7 +23,7 @@ def home():
         cur = con.cursor()
         lastOne = cur.execute('SELECT * FROM monthly_stats ORDER BY date DESC').fetchall()
         dataLast = lastOne[0]
-        dataFirst = lastOne[70] #Number of Lines to Calculate Rate
+        dataFirst = lastOne[60] #Number of Lines to Calculate Rate
 
         #Hours Dif in the last <daraFirst> entries
         timeLast = datetime.fromtimestamp(dataLast[0])

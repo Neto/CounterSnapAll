@@ -9794,3 +9794,50 @@ Read port: 55272
 
 ###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
 
+1656884183516	geckodriver	INFO	Listening on 127.0.0.1:57511
+1656884184040	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "57512" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/q2/knsrkkc56871d1n55ck4rzr00000gn/T/rust_mozprofileE4rt4R"
+*** You are running in headless mode.
+1656884187926	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/q2/knsrkkc56871d1n55ck4rzr00000gn/T/rust_mozprofileE4rt4R/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:57512/devtools/browser/3e37e900-2321-44e5-b9f3-5d37bd661e18
+1656884189408	Marionette	INFO	Listening on port 57530
+Read port: 57530
+1656884189479	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656884192875	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-03T21:36:33Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-03T21:36:33Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-03T21:36:33Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-03T21:36:33Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: resource://gre/actors/ContentMetaChild.jsm, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+[2022-07-03T21:36:35Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-03T21:36:35Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-03T21:36:35Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-03T21:36:35Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: resource://gre/actors/ContentMetaChild.jsm, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1656884205464	Marionette	INFO	Stopped listening on port 57530
+1656884396861	geckodriver	INFO	Listening on 127.0.0.1:57627
+1656884397376	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "57628" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/q2/knsrkkc56871d1n55ck4rzr00000gn/T/rust_mozprofileaTQr8B"
+*** You are running in headless mode.
+1656884397742	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/q2/knsrkkc56871d1n55ck4rzr00000gn/T/rust_mozprofileaTQr8B/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:57628/devtools/browser/9d7ea17a-a308-4767-a3e6-4cc92eb813a2
+1656884399192	Marionette	INFO	Listening on port 57642
+Read port: 57642
+1656884399220	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656884401787	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-03T21:40:01Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-03T21:40:01Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-03T21:40:01Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-03T21:40:01Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-03T21:40:03Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-03T21:40:03Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-03T21:40:03Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-03T21:40:03Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.2a556858.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1656884428407	Marionette	INFO	Stopped listening on port 57642
