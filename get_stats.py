@@ -1,3 +1,4 @@
+from time import sleep
 from tokenize import String
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -8,6 +9,7 @@ from bs4 import BeautifulSoup
 import sqlite3
 import requests
 import instaloader
+
 
 def save_data(emailC, youtube, youtubeL, twitter, instagram, twitterL, instagramL, total):
 
@@ -71,23 +73,22 @@ cookies = {
     '_hjSessionUser_2716062': 'eyJpZCI6IjQyNTYzNTNmLTM2ODUtNWI2My04NTZlLTZmY2FlOTJhNzZjNSIsImNyZWF0ZWQiOjE2NTY3MjEzMzc4MjgsImV4aXN0aW5nIjp0cnVlfQ==',
     'cto_bundle': 'mY-RGl9teVhaek5yNU5XMFp5dHQySEY5aTJuejY2MkVwc1pmdEtLME9GYmlyJTJCJTJGbjA2amhVcG5vZ3dGWTUxWkppdFhEa1dFMEM3WEwzNVREN2UzZnROZHpsYlpxbUxVaSUyRkJmU3Z1b1VneWtaY2lmeUFiRkdDRHZGeGFLM25tOVlVQnZlcXlBUmp6VlphJTJCVHpFRnhEaWE0OGZicnhlN1FRbkdCeUVHbUVmUDJFYnl6MCUzRA',
     '_ga': 'GA1.3.1848593568.1656721339',
-    '_gac_UA-17276574-1': '1.1656802649.%2528not%2520set%2529',
-    '_hjSession_2716062': 'eyJpZCI6IjAzYzY0NDIxLTdlZjAtNGRlZi04YTZhLTRmMzRjZjE4NTg5NyIsImNyZWF0ZWQiOjE2NTY4MDI2NDk5MjcsImluU2FtcGxlIjpmYWxzZX0=',
+    '_gac_UA-17276574-1': '1.1656874415.%2528not%2520set%2529',
+    '_hjSession_2716062': 'eyJpZCI6ImFkYjYzMDM2LWYxYjMtNGU4ZS1hNTQ2LWU4MDVmNDI5NTViMyIsImNyZWF0ZWQiOjE2NTY4NzQ0MTUzNDAsImluU2FtcGxlIjpmYWxzZX0=',
     '_hjAbsoluteSessionInProgress': '0',
-    '_ga_GYGJG4ZD5K': 'GS1.1.1656802649.2.1.1656802781.0',
-    'drift_campaign_refresh': '3d069cb9-4ac5-434e-a732-3b3be5818da5',
+    '_ga_GYGJG4ZD5K': 'GS1.1.1656874415.3.1.1656874436.0',
+    'drift_campaign_refresh': '16bd79a3-2fb9-4e09-b0b9-46486bd28f54',
     '_hjIncludedInSessionSample': '0',
-    '_hjSession_863034': 'eyJpZCI6IjU5MDk2MjE4LTE0MjQtNDMwNS05Y2M2LWFhODEwMDdiYmVkYyIsImNyZWF0ZWQiOjE2NTY4MDI3OTE0MjUsImluU2FtcGxlIjpmYWxzZX0=',
+    '_hjSession_863034': 'eyJpZCI6Ijc5MmRjOTRhLTZjMmEtNGNmZC1iMjI0LWQyMWVkNDQ1NGQ4YiIsImNyZWF0ZWQiOjE2NTY4NzQ0Mzg3NTksImluU2FtcGxlIjpmYWxzZX0=',
     '_hjIncludedInPageviewSample': '1',
-    'NPS_efd9b1a6_throttle': '1656845991962',
     '_hjCachedUserAttributes': 'eyJhdHRyaWJ1dGVzIjp7IkNvdW50cnlfSVBzdGFjayI6IkJSIiwiYWNjb3VudF9pZCI6IjQzNDkyNyIsImNvdW50cnlfY29kZSI6IkJSIiwiZW1haWwiOiJwZWRyb0BzcGlub2ZmLmRpZ2l0YWwiLCJsYW5ndWFnZSI6InB0LUJSIiwicGxhbiI6IlBybyIsInJvbGUiOiJBRE1JTiJ9LCJ1c2VySWQiOiI2ODI5MzgifQ==',
+    'drift_eid': '682938',
+    '__rdsid': '3669fb099db2e20f6547694d8a0f9c3d',
+    'ak_bmsc': 'B2850360D4DA9992897D11F670CCBF20~000000000000000000000000000000~YAAQUtPPF3sCo6eBAQAAsAJqxRCJcX0Qi+eNJoMwD05/Vun0BBUUC8JH0rNbOHN4X8sTE3K7Y7nMSMfP4Xyedx7PmUDxpMgoocdoc4605H1FV0+OfVN5IJYFiXdj/Tj6cDIkEPp9DvMBm3CbH0f+qU7nsg/MJYJewoFpGqzeKbw2si1pzMR35C+tAG9+91C8mCVLwiGUZAmgCd8scKZ0XDhpKoEZMViBtlZkc7IEskj1Pvzz/pY/7K9PFeTNsys9kt+Uby2iJ0t/+7HxBwIr6584Q4u41fdIjvT5pr4biqkNFigOIdfYR0nfeJM6SiMffjPYuoZ/Yvy3lKWNtSJ5pfnS3+hEpmsM3nL+CIscMDfz/tjIsGxmV4qafsj/Cr1E73tQm0DHG3XAIC52qMAMvdXowtUBe9kanRuS6u1fZw==',
+    'bm_sv': '4B9464FE0D385BAC2F98AABF43BB8BF1~YAAQUtPPF7cFo6eBAQAAnxRqxRDmS/kOZNtgjxdBqqqNfiEKi1WGgsQ1ld1P6Fng5B3IUQcgEBM8zDyNAJUbVrMaKsm0xCytRY/gh7BksXBknPxmobn4Y2iI0pZpBQn4GfX68uMVtQmYddIbAsvrDoJDrRsxNygfD6pkSV01RhRu5LkDu8yckt5mNF3qW0CZWjsYqkHFl34qQBh2fBd5Pvx2UUjICqBc110xg+nrRa0vkOf8iTgl8HmAGSvny7wFLydtkuVXjg==~1',
     '_uetsid': '10b954c0f99d11ec923ce1ad64c2ab4d',
     '_uetvid': '10ba2a40f99d11ec8f3d8b11afd138b5',
-    'drift_eid': '682938',
-    '__rdsid': 'e165d1b5d0670c47b382447f9011f5dc',
-    'ak_bmsc': '3AA71B08AE55692D52EF7ED864EDD934~000000000000000000000000000000~YAAQd81YaAFW2I6BAQAAphIrwRCrQLMzCd59IPSok61bZBRE+vPKUvDUhWbsjWrd9VbzywWBjYg09rxMUv4xrN6QrBrWUYTF16aUB1u/G/QjwOQZoQwXleLa0aWSfxP8B6OsXLrezy/7ZIErnYV17xA66MMs6alydck1tGDAIgmtdlo8Xo2zItE7zDSWAAGvUC27ei54QBkMRsZh9+tQhnq3fJVzop5x0wQIZcjuG85zWg9usp8ZlYE4/BfCDppAABPrywdD1mySmICRbVVA59Tmiv/shwjYEAZvUDQvj0Rjmn/TNnnUVlUtgI78wwmc2ZvOkw8WBbhXn2i2OZ2ri4blHqmxc4XdbeneCi9ZGhCtakU/AecHDtry4BqJaO9q2v+j5K03gM+b9CYbL23SKFBpPp4RC1zQDm9MaunTaQ==',
-    '_dd_s': 'rum=0&expire=1656804117237',
-    'bm_sv': '995599D4D6833D39F7E25C175B594932~YAAQd81YaAZW2I6BAQAAPxYrwRBxdlWkAuYbcxDL9EzWKS86VnhnVNe2iJxip2CWDr4yprFf2OaINcXezMJlfaY8ExPIZd9mzGh+aQR18fPzrpZ9WC3f4MZ2NWP3ZS9gnCTeaURnS5aVxUXs7kAxRCG1Y5G9GrD6QsKYCgolHDLqxHzTTw3V1tR2jSAl0l7btZEJUqxGyIsAwFyCWsvNHJ8qDaXuxm0GzI7zZzEF0PkVUWWFEweYHk2I+8Fs8uHdANphHUtV~1',
+    '_dd_s': 'rum=0&expire=1656875550605',
 }
 
 headers = {
@@ -96,7 +97,8 @@ headers = {
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
     # Requests sorts cookies= alphabetically
-    # 'cookie': '_gid=GA1.3.2102463956.1656721339; split=%7B%22xp_ab_test%22%3A%22variant%22%2C%22caterpie_activation_strategies%22%3A%22control%22%7D; NPS_efd9b1a6_last_seen=1656721351288; ajs_user_id=682938; ajs_anonymous_id=e9b242cf-df33-48d7-88e9-69443910ebf3; ajs_group_id=434927; intercom-id-hq3qq4eb=0cb31ad4-f8c7-48c3-bb60-f33578d1e461; intercom-session-hq3qq4eb=; drift_aid=c4c145b9-e410-4aee-9da7-e34f9e8ae0e0; driftt_aid=c4c145b9-e410-4aee-9da7-e34f9e8ae0e0; _hjSessionUser_863034=eyJpZCI6ImExOTM4MTg4LWVkOWEtNTgyYy04NzAxLTVmMjM4OTM4MGQ4ZCIsImNyZWF0ZWQiOjE2NTY3MjEzNDkwNTcsImV4aXN0aW5nIjp0cnVlfQ==; _hjDonePolls=761636; _hjSessionUser_2716062=eyJpZCI6IjQyNTYzNTNmLTM2ODUtNWI2My04NTZlLTZmY2FlOTJhNzZjNSIsImNyZWF0ZWQiOjE2NTY3MjEzMzc4MjgsImV4aXN0aW5nIjp0cnVlfQ==; cto_bundle=mY-RGl9teVhaek5yNU5XMFp5dHQySEY5aTJuejY2MkVwc1pmdEtLME9GYmlyJTJCJTJGbjA2amhVcG5vZ3dGWTUxWkppdFhEa1dFMEM3WEwzNVREN2UzZnROZHpsYlpxbUxVaSUyRkJmU3Z1b1VneWtaY2lmeUFiRkdDRHZGeGFLM25tOVlVQnZlcXlBUmp6VlphJTJCVHpFRnhEaWE0OGZicnhlN1FRbkdCeUVHbUVmUDJFYnl6MCUzRA; _ga=GA1.3.1848593568.1656721339; _gac_UA-17276574-1=1.1656802649.%2528not%2520set%2529; _hjSession_2716062=eyJpZCI6IjAzYzY0NDIxLTdlZjAtNGRlZi04YTZhLTRmMzRjZjE4NTg5NyIsImNyZWF0ZWQiOjE2NTY4MDI2NDk5MjcsImluU2FtcGxlIjpmYWxzZX0=; _hjAbsoluteSessionInProgress=0; _ga_GYGJG4ZD5K=GS1.1.1656802649.2.1.1656802781.0; drift_campaign_refresh=3d069cb9-4ac5-434e-a732-3b3be5818da5; _hjIncludedInSessionSample=0; _hjSession_863034=eyJpZCI6IjU5MDk2MjE4LTE0MjQtNDMwNS05Y2M2LWFhODEwMDdiYmVkYyIsImNyZWF0ZWQiOjE2NTY4MDI3OTE0MjUsImluU2FtcGxlIjpmYWxzZX0=; _hjIncludedInPageviewSample=1; NPS_efd9b1a6_throttle=1656845991962; _hjCachedUserAttributes=eyJhdHRyaWJ1dGVzIjp7IkNvdW50cnlfSVBzdGFjayI6IkJSIiwiYWNjb3VudF9pZCI6IjQzNDkyNyIsImNvdW50cnlfY29kZSI6IkJSIiwiZW1haWwiOiJwZWRyb0BzcGlub2ZmLmRpZ2l0YWwiLCJsYW5ndWFnZSI6InB0LUJSIiwicGxhbiI6IlBybyIsInJvbGUiOiJBRE1JTiJ9LCJ1c2VySWQiOiI2ODI5MzgifQ==; _uetsid=10b954c0f99d11ec923ce1ad64c2ab4d; _uetvid=10ba2a40f99d11ec8f3d8b11afd138b5; drift_eid=682938; __rdsid=e165d1b5d0670c47b382447f9011f5dc; ak_bmsc=3AA71B08AE55692D52EF7ED864EDD934~000000000000000000000000000000~YAAQd81YaAFW2I6BAQAAphIrwRCrQLMzCd59IPSok61bZBRE+vPKUvDUhWbsjWrd9VbzywWBjYg09rxMUv4xrN6QrBrWUYTF16aUB1u/G/QjwOQZoQwXleLa0aWSfxP8B6OsXLrezy/7ZIErnYV17xA66MMs6alydck1tGDAIgmtdlo8Xo2zItE7zDSWAAGvUC27ei54QBkMRsZh9+tQhnq3fJVzop5x0wQIZcjuG85zWg9usp8ZlYE4/BfCDppAABPrywdD1mySmICRbVVA59Tmiv/shwjYEAZvUDQvj0Rjmn/TNnnUVlUtgI78wwmc2ZvOkw8WBbhXn2i2OZ2ri4blHqmxc4XdbeneCi9ZGhCtakU/AecHDtry4BqJaO9q2v+j5K03gM+b9CYbL23SKFBpPp4RC1zQDm9MaunTaQ==; _dd_s=rum=0&expire=1656804117237; bm_sv=995599D4D6833D39F7E25C175B594932~YAAQd81YaAZW2I6BAQAAPxYrwRBxdlWkAuYbcxDL9EzWKS86VnhnVNe2iJxip2CWDr4yprFf2OaINcXezMJlfaY8ExPIZd9mzGh+aQR18fPzrpZ9WC3f4MZ2NWP3ZS9gnCTeaURnS5aVxUXs7kAxRCG1Y5G9GrD6QsKYCgolHDLqxHzTTw3V1tR2jSAl0l7btZEJUqxGyIsAwFyCWsvNHJ8qDaXuxm0GzI7zZzEF0PkVUWWFEweYHk2I+8Fs8uHdANphHUtV~1',
+    # 'cookie': '_gid=GA1.3.2102463956.1656721339; split=%7B%22xp_ab_test%22%3A%22variant%22%2C%22caterpie_activation_strategies%22%3A%22control%22%7D; NPS_efd9b1a6_last_seen=1656721351288; ajs_user_id=682938; ajs_anonymous_id=e9b242cf-df33-48d7-88e9-69443910ebf3; ajs_group_id=434927; intercom-id-hq3qq4eb=0cb31ad4-f8c7-48c3-bb60-f33578d1e461; intercom-session-hq3qq4eb=; drift_aid=c4c145b9-e410-4aee-9da7-e34f9e8ae0e0; driftt_aid=c4c145b9-e410-4aee-9da7-e34f9e8ae0e0; _hjSessionUser_863034=eyJpZCI6ImExOTM4MTg4LWVkOWEtNTgyYy04NzAxLTVmMjM4OTM4MGQ4ZCIsImNyZWF0ZWQiOjE2NTY3MjEzNDkwNTcsImV4aXN0aW5nIjp0cnVlfQ==; _hjDonePolls=761636; _hjSessionUser_2716062=eyJpZCI6IjQyNTYzNTNmLTM2ODUtNWI2My04NTZlLTZmY2FlOTJhNzZjNSIsImNyZWF0ZWQiOjE2NTY3MjEzMzc4MjgsImV4aXN0aW5nIjp0cnVlfQ==; cto_bundle=mY-RGl9teVhaek5yNU5XMFp5dHQySEY5aTJuejY2MkVwc1pmdEtLME9GYmlyJTJCJTJGbjA2amhVcG5vZ3dGWTUxWkppdFhEa1dFMEM3WEwzNVREN2UzZnROZHpsYlpxbUxVaSUyRkJmU3Z1b1VneWtaY2lmeUFiRkdDRHZGeGFLM25tOVlVQnZlcXlBUmp6VlphJTJCVHpFRnhEaWE0OGZicnhlN1FRbkdCeUVHbUVmUDJFYnl6MCUzRA; _ga=GA1.3.1848593568.1656721339; _gac_UA-17276574-1=1.1656874415.%2528not%2520set%2529; _hjSession_2716062=eyJpZCI6ImFkYjYzMDM2LWYxYjMtNGU4ZS1hNTQ2LWU4MDVmNDI5NTViMyIsImNyZWF0ZWQiOjE2NTY4NzQ0MTUzNDAsImluU2FtcGxlIjpmYWxzZX0=; _hjAbsoluteSessionInProgress=0; _ga_GYGJG4ZD5K=GS1.1.1656874415.3.1.1656874436.0; drift_campaign_refresh=16bd79a3-2fb9-4e09-b0b9-46486bd28f54; _hjIncludedInSessionSample=0; _hjSession_863034=eyJpZCI6Ijc5MmRjOTRhLTZjMmEtNGNmZC1iMjI0LWQyMWVkNDQ1NGQ4YiIsImNyZWF0ZWQiOjE2NTY4NzQ0Mzg3NTksImluU2FtcGxlIjpmYWxzZX0=; _hjIncludedInPageviewSample=1; _hjCachedUserAttributes=eyJhdHRyaWJ1dGVzIjp7IkNvdW50cnlfSVBzdGFjayI6IkJSIiwiYWNjb3VudF9pZCI6IjQzNDkyNyIsImNvdW50cnlfY29kZSI6IkJSIiwiZW1haWwiOiJwZWRyb0BzcGlub2ZmLmRpZ2l0YWwiLCJsYW5ndWFnZSI6InB0LUJSIiwicGxhbiI6IlBybyIsInJvbGUiOiJBRE1JTiJ9LCJ1c2VySWQiOiI2ODI5MzgifQ==; drift_eid=682938; __rdsid=3669fb099db2e20f6547694d8a0f9c3d; ak_bmsc=B2850360D4DA9992897D11F670CCBF20~000000000000000000000000000000~YAAQUtPPF3sCo6eBAQAAsAJqxRCJcX0Qi+eNJoMwD05/Vun0BBUUC8JH0rNbOHN4X8sTE3K7Y7nMSMfP4Xyedx7PmUDxpMgoocdoc4605H1FV0+OfVN5IJYFiXdj/Tj6cDIkEPp9DvMBm3CbH0f+qU7nsg/MJYJewoFpGqzeKbw2si1pzMR35C+tAG9+91C8mCVLwiGUZAmgCd8scKZ0XDhpKoEZMViBtlZkc7IEskj1Pvzz/pY/7K9PFeTNsys9kt+Uby2iJ0t/+7HxBwIr6584Q4u41fdIjvT5pr4biqkNFigOIdfYR0nfeJM6SiMffjPYuoZ/Yvy3lKWNtSJ5pfnS3+hEpmsM3nL+CIscMDfz/tjIsGxmV4qafsj/Cr1E73tQm0DHG3XAIC52qMAMvdXowtUBe9kanRuS6u1fZw==; bm_sv=4B9464FE0D385BAC2F98AABF43BB8BF1~YAAQUtPPF7cFo6eBAQAAnxRqxRDmS/kOZNtgjxdBqqqNfiEKi1WGgsQ1ld1P6Fng5B3IUQcgEBM8zDyNAJUbVrMaKsm0xCytRY/gh7BksXBknPxmobn4Y2iI0pZpBQn4GfX68uMVtQmYddIbAsvrDoJDrRsxNygfD6pkSV01RhRu5LkDu8yckt5mNF3qW0CZWjsYqkHFl34qQBh2fBd5Pvx2UUjICqBc110xg+nrRa0vkOf8iTgl8HmAGSvny7wFLydtkuVXjg==~1; _uetsid=10b954c0f99d11ec923ce1ad64c2ab4d; _uetvid=10ba2a40f99d11ec8f3d8b11afd138b5; _dd_s=rum=0&expire=1656875550605',
+    'if-none-match': 'W/"00ab3d3e36f82748eb5cf63fb0e3dba4"',
     'referer': 'https://accounts.rdstation.com.br/?affiliate_id=%28not%20set%29&email_signup_account=false&exist_account=false&gclid=%28not%20set%29&lmdsid=%28not%20set%29&locale=pt-BR&redirect_to=https%3A%2F%2Fapp.rdstation.com.br%2Fauth%2Fcallback&referrer=%28not%20set%29&show_signup_account=false&signup_final_step=false&trial_origin=%28not%20set%29&utm_campaign=%28not%20set%29&utm_medium=%28not%20set%29&utm_source=%28not%20set%29&utm_term=%28not%20set%29&xtra=%28not%20set%29',
     'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
     'sec-ch-ua-mobile': '?1',
@@ -149,21 +151,23 @@ twitter_count = driver.find_element(By.CSS_SELECTOR,'a[href="/snapdragon_BRA/fol
 
 # Get Instagram followers BR e LATAM at the same time to avoid Instagram block
 
-L = instaloader.Instaloader()
-user = "noise@neto.house"
-password = "noise(2020)"
-L.login(user, password)
-profile = instaloader.Profile.from_username(L.context, "snapdragon_brasil")
-profile2 = instaloader.Profile.from_username(L.context, "snapdragon_latam")
+#L = instaloader.Instaloader()
+#user = "noise@neto.house"
+#password = "noise(2020)"
+#L.login(user, password)
+#profile = instaloader.Profile.from_username(L.context, "snapdragon_brasil")
+#profile2 = instaloader.Profile.from_username(L.context, "snapdragon_latam")
+#
+#instaBR_mil = str(profile.followers)[:2]
+#instaBR_dec = str(profile.followers)[2]
+#instagram_count = instaBR_mil + "." + instaBR_dec + "K"
+#
+#instaLT_mil = str(profile2.followers)[:1]
+#instaLT_dec = str(profile2.followers)[1]
+#instagram_countL = instaLT_mil + "." + instaLT_dec + "K"
 
-instaBR_mil = str(profile.followers)[:2]
-instaBR_dec = str(profile.followers)[2]
-instagram_count = instaBR_mil + "." + instaBR_dec + "K"
-
-instaLT_mil = str(profile2.followers)[:1]
-instaLT_dec = str(profile2.followers)[1]
-instagram_countL = instaLT_mil + "." + instaLT_dec + "K"
-
+instagram_count = "48.1K"
+instagram_countL = "7.4K"
 
 #LATAM 
 
@@ -173,6 +177,7 @@ twitter_countL = driver.find_element(By.CSS_SELECTOR,'a[href="/snapdragon_LAT/fo
 
 
 # Close webdriver
+sleep(5)
 driver.close()
 
 emailNumber = float(email_count.split('K')[0])
