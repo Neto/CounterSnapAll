@@ -4972,3 +4972,673 @@ Read port: 61548
 JavaScript error: resource://gre/actors/ContentMetaChild.jsm, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
 JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.2a556858.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
 1656738630544	Marionette	INFO	Stopped listening on port 61548
+1656739196319	geckodriver	INFO	Listening on 127.0.0.1:64360
+1656739196837	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "64361" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/q2/knsrkkc56871d1n55ck4rzr00000gn/T/rust_mozprofilelf6gCv"
+*** You are running in headless mode.
+1656739197420	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/q2/knsrkkc56871d1n55ck4rzr00000gn/T/rust_mozprofilelf6gCv/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:64361/devtools/browser/728c6b9f-d0a5-4f60-b162-523301eec226
+1656739199596	Marionette	INFO	Listening on port 64392
+Read port: 64392
+1656739199715	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656739205426	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T05:20:05Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T05:20:05Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T05:20:05Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T05:20:05Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T05:20:11Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T05:20:11Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T05:20:11Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T05:20:11Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.2a556858.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1656739226743	Marionette	INFO	Stopped listening on port 64392
+1656741601533	geckodriver	INFO	Listening on 127.0.0.1:49986
+1656741601928	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "49987" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9Z6aYE"
+*** You are running in headless mode.
+2022-07-02 03:00:03.048 firefox-bin[13736:3611973] XType: com.apple.fonts is not accessible.
+2022-07-02 03:00:03.048 firefox-bin[13736:3611973] XType: XTFontStaticRegistry is enabled.
+1656741603070	Marionette	INFO	Marionette enabled
+2022-07-02 03:00:03.962 plugin-container[13741:3612018] XType: com.apple.fonts is not accessible.
+2022-07-02 03:00:03.962 plugin-container[13741:3612018] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+2022-07-02 03:00:04.418 plugin-container[13742:3612051] XType: com.apple.fonts is not accessible.
+2022-07-02 03:00:04.419 plugin-container[13742:3612051] XType: XTFontStaticRegistry is enabled.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile9Z6aYE/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:49987/devtools/browser/aa30e7c0-ba40-4244-8aef-8d5857949cf8
+1656741606350	Marionette	INFO	Listening on port 50007
+Read port: 50007
+1656741606501	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-07-02 03:00:06.572 plugin-container[13755:3612219] XType: com.apple.fonts is not accessible.
+2022-07-02 03:00:06.573 plugin-container[13755:3612219] XType: XTFontStaticRegistry is enabled.
+1656741612382	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T06:00:12Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T06:00:12Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T06:00:12Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T06:00:15Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T06:00:19Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T06:00:19Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T06:00:19Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T06:00:19Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.2a556858.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1656741642339	Marionette	INFO	Stopped listening on port 50007
+JavaScript error: resource://gre/actors/ContentMetaChild.jsm, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1656745207377	geckodriver	INFO	Listening on 127.0.0.1:52033
+1656745207729	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "52034" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileSAhI3k"
+*** You are running in headless mode.
+2022-07-02 04:00:09.860 firefox-bin[23300:3686739] XType: com.apple.fonts is not accessible.
+2022-07-02 04:00:09.861 firefox-bin[23300:3686739] XType: XTFontStaticRegistry is enabled.
+1656745209976	Marionette	INFO	Marionette enabled
+2022-07-02 04:00:12.015 plugin-container[23308:3686783] XType: com.apple.fonts is not accessible.
+2022-07-02 04:00:12.019 plugin-container[23308:3686783] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+2022-07-02 04:00:13.370 plugin-container[23312:3686818] XType: com.apple.fonts is not accessible.
+2022-07-02 04:00:13.370 plugin-container[23312:3686818] XType: XTFontStaticRegistry is enabled.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSAhI3k/search.json.mozlz4", (void 0)))
+2022-07-02 04:00:16.612 plugin-container[23318:3687084] XType: com.apple.fonts is not accessible.
+2022-07-02 04:00:16.613 plugin-container[23318:3687084] XType: XTFontStaticRegistry is enabled.
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:52034/devtools/browser/76abc922-ef57-4f3d-9f83-bdcc72581cc5
+1656745216827	Marionette	INFO	Listening on port 52051
+Read port: 52051
+1656745216879	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656745225261	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T07:00:26Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T07:00:26Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T07:00:26Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T07:00:26Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T07:00:35Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T07:00:35Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T07:00:35Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T07:00:35Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.2a556858.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1656745266122	Marionette	INFO	Stopped listening on port 52051
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://gre/modules/CrashManager.jsm, line 898: AbortError: IOUtils: Shutting down and refusing additional I/O tasks
+1656748802066	geckodriver	INFO	Listening on 127.0.0.1:53890
+1656748802613	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "53891" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileK71qTt"
+*** You are running in headless mode.
+2022-07-02 05:00:04.116 firefox-bin[31772:3757217] XType: com.apple.fonts is not accessible.
+2022-07-02 05:00:04.117 firefox-bin[31772:3757217] XType: XTFontStaticRegistry is enabled.
+1656748804167	Marionette	INFO	Marionette enabled
+2022-07-02 05:00:05.101 plugin-container[31783:3757286] XType: com.apple.fonts is not accessible.
+2022-07-02 05:00:05.101 plugin-container[31783:3757286] XType: XTFontStaticRegistry is enabled.
+2022-07-02 05:00:05.294 plugin-container[31784:3757307] XType: com.apple.fonts is not accessible.
+2022-07-02 05:00:05.294 plugin-container[31784:3757307] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileK71qTt/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:53891/devtools/browser/77f13ce9-5f1e-487f-8d3e-a25a722a1ac5
+1656748806900	Marionette	INFO	Listening on port 53909
+2022-07-02 05:00:06.986 plugin-container[31786:3757422] XType: com.apple.fonts is not accessible.
+2022-07-02 05:00:06.986 plugin-container[31786:3757422] XType: XTFontStaticRegistry is enabled.
+Read port: 53909
+1656748807084	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656748812228	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T08:00:12Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T08:00:12Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T08:00:12Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T08:00:12Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T08:00:15Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T08:00:15Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T08:00:15Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T08:00:15Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.2a556858.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1656748832315	Marionette	INFO	Stopped listening on port 53909
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1656752403300	geckodriver	INFO	Listening on 127.0.0.1:55979
+1656752403707	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "55980" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuuEVcX"
+*** You are running in headless mode.
+2022-07-02 06:00:07.138 firefox-bin[38183:3828754] XType: com.apple.fonts is not accessible.
+2022-07-02 06:00:07.138 firefox-bin[38183:3828754] XType: XTFontStaticRegistry is enabled.
+1656752407376	Marionette	INFO	Marionette enabled
+2022-07-02 06:00:09.588 plugin-container[38197:3828842] XType: com.apple.fonts is not accessible.
+2022-07-02 06:00:09.822 plugin-container[38197:3828842] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+2022-07-02 06:00:11.462 plugin-container[38202:3828884] XType: com.apple.fonts is not accessible.
+2022-07-02 06:00:11.474 plugin-container[38202:3828884] XType: XTFontStaticRegistry is enabled.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileuuEVcX/search.json.mozlz4", (void 0)))
+2022-07-02 06:00:13.362 plugin-container[38206:3829000] XType: com.apple.fonts is not accessible.
+2022-07-02 06:00:13.363 plugin-container[38206:3829000] XType: XTFontStaticRegistry is enabled.
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:55980/devtools/browser/e48eea18-ca98-4641-a8bc-6625a46bc56b
+1656752414934	Marionette	INFO	Listening on port 56010
+Read port: 56010
+1656752415121	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656752420639	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T09:00:20Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T09:00:20Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T09:00:20Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T09:00:20Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T09:00:24Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T09:00:24Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T09:00:24Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T09:00:24Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.2a556858.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1656752450005	Marionette	INFO	Stopped listening on port 56010
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+1656756001503	geckodriver	INFO	Listening on 127.0.0.1:57754
+1656756001991	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "57755" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilen48TxK"
+*** You are running in headless mode.
+2022-07-02 07:00:02.658 firefox-bin[43748:3886863] XType: com.apple.fonts is not accessible.
+2022-07-02 07:00:02.658 firefox-bin[43748:3886863] XType: XTFontStaticRegistry is enabled.
+1656756002681	Marionette	INFO	Marionette enabled
+2022-07-02 07:00:03.711 plugin-container[43749:3886899] XType: com.apple.fonts is not accessible.
+2022-07-02 07:00:03.711 plugin-container[43749:3886899] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+2022-07-02 07:00:04.119 plugin-container[43751:3886931] XType: com.apple.fonts is not accessible.
+2022-07-02 07:00:04.119 plugin-container[43751:3886931] XType: XTFontStaticRegistry is enabled.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilen48TxK/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:57755/devtools/browser/be8c4575-2f34-474e-98d1-d1beef580695
+1656756005194	Marionette	INFO	Listening on port 57773
+Read port: 57773
+1656756005300	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-07-02 07:00:05.336 plugin-container[43763:3887090] XType: com.apple.fonts is not accessible.
+2022-07-02 07:00:05.336 plugin-container[43763:3887090] XType: XTFontStaticRegistry is enabled.
+1656756008775	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T10:00:08Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T10:00:08Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T10:00:08Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T10:00:08Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T10:00:11Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T10:00:11Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T10:00:11Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T10:00:11Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: resource://gre/actors/ContentMetaChild.jsm, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.2a556858.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1656756025977	Marionette	INFO	Stopped listening on port 57773
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1656759603364	geckodriver	INFO	Listening on 127.0.0.1:59230
+1656759603972	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "59231" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepRmguW"
+*** You are running in headless mode.
+2022-07-02 08:00:04.704 firefox-bin[48852:3939366] XType: com.apple.fonts is not accessible.
+2022-07-02 08:00:04.704 firefox-bin[48852:3939366] XType: XTFontStaticRegistry is enabled.
+1656759604722	Marionette	INFO	Marionette enabled
+2022-07-02 08:00:05.520 plugin-container[48861:3939430] XType: com.apple.fonts is not accessible.
+2022-07-02 08:00:05.520 plugin-container[48861:3939430] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+2022-07-02 08:00:05.943 plugin-container[48862:3939458] XType: com.apple.fonts is not accessible.
+2022-07-02 08:00:05.943 plugin-container[48862:3939458] XType: XTFontStaticRegistry is enabled.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilepRmguW/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:59231/devtools/browser/d8f08946-da0c-4b9a-8f41-8a5d0b7f23e7
+1656759607026	Marionette	INFO	Listening on port 59250
+Read port: 59250
+1656759607139	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-07-02 08:00:07.170 plugin-container[48864:3939550] XType: com.apple.fonts is not accessible.
+2022-07-02 08:00:07.170 plugin-container[48864:3939550] XType: XTFontStaticRegistry is enabled.
+1656759611186	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T11:00:11Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T11:00:11Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T11:00:11Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T11:00:12Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T11:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T11:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T11:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T11:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.2a556858.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1656759637217	Marionette	INFO	Stopped listening on port 59250
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1656763200983	geckodriver	INFO	Listening on 127.0.0.1:60730
+1656763201577	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "60731" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIsnjFS"
+*** You are running in headless mode.
+2022-07-02 09:00:02.299 firefox-bin[53489:4011248] XType: com.apple.fonts is not accessible.
+2022-07-02 09:00:02.299 firefox-bin[53489:4011248] XType: XTFontStaticRegistry is enabled.
+1656763202322	Marionette	INFO	Marionette enabled
+2022-07-02 09:00:03.162 plugin-container[53490:4011292] XType: com.apple.fonts is not accessible.
+2022-07-02 09:00:03.162 plugin-container[53490:4011292] XType: XTFontStaticRegistry is enabled.
+2022-07-02 09:00:03.399 plugin-container[53491:4011321] XType: com.apple.fonts is not accessible.
+2022-07-02 09:00:03.399 plugin-container[53491:4011321] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileIsnjFS/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:60731/devtools/browser/69f7aff8-a362-4592-a54f-80fd8d887db3
+1656763204699	Marionette	INFO	Listening on port 60748
+2022-07-02 09:00:04.844 plugin-container[53492:4011427] XType: com.apple.fonts is not accessible.
+2022-07-02 09:00:04.844 plugin-container[53492:4011427] XType: XTFontStaticRegistry is enabled.
+Read port: 60748
+1656763204914	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656763209205	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T12:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T12:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T12:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T12:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T12:00:23Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T12:00:23Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T12:00:23Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T12:00:23Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.2a556858.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1656763250343	Marionette	INFO	Stopped listening on port 60748
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1656766801167	geckodriver	INFO	Listening on 127.0.0.1:62280
+1656766801866	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "62281" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYd5E1e"
+*** You are running in headless mode.
+2022-07-02 10:00:02.754 firefox-bin[58196:4088119] XType: com.apple.fonts is not accessible.
+2022-07-02 10:00:02.754 firefox-bin[58196:4088119] XType: XTFontStaticRegistry is enabled.
+1656766802774	Marionette	INFO	Marionette enabled
+2022-07-02 10:00:03.603 plugin-container[58199:4088161] XType: com.apple.fonts is not accessible.
+2022-07-02 10:00:03.603 plugin-container[58199:4088161] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+2022-07-02 10:00:04.160 plugin-container[58200:4088206] XType: com.apple.fonts is not accessible.
+2022-07-02 10:00:04.160 plugin-container[58200:4088206] XType: XTFontStaticRegistry is enabled.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileYd5E1e/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:62281/devtools/browser/8386682e-d9d2-48e9-9114-02cc38930362
+1656766805568	Marionette	INFO	Listening on port 62304
+Read port: 62304
+1656766805654	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-07-02 10:00:05.756 plugin-container[58209:4088344] XType: com.apple.fonts is not accessible.
+2022-07-02 10:00:05.757 plugin-container[58209:4088344] XType: XTFontStaticRegistry is enabled.
+1656766810442	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T13:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T13:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T13:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T13:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T13:00:15Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T13:00:15Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T13:00:15Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T13:00:15Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+1656770401249	geckodriver	INFO	Listening on 127.0.0.1:63860
+1656770401912	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "63861" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilealC0zi"
+*** You are running in headless mode.
+2022-07-02 11:00:02.869 firefox-bin[62685:4165255] XType: com.apple.fonts is not accessible.
+2022-07-02 11:00:02.869 firefox-bin[62685:4165255] XType: XTFontStaticRegistry is enabled.
+1656770402892	Marionette	INFO	Marionette enabled
+2022-07-02 11:00:03.694 plugin-container[62686:4165293] XType: com.apple.fonts is not accessible.
+2022-07-02 11:00:03.695 plugin-container[62686:4165293] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+2022-07-02 11:00:04.059 plugin-container[62687:4165323] XType: com.apple.fonts is not accessible.
+2022-07-02 11:00:04.060 plugin-container[62687:4165323] XType: XTFontStaticRegistry is enabled.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilealC0zi/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:63861/devtools/browser/5b141204-7aab-4743-a5e5-d20cecbde7db
+1656770405205	Marionette	INFO	Listening on port 63880
+2022-07-02 11:00:05.346 plugin-container[62696:4165467] XType: com.apple.fonts is not accessible.
+2022-07-02 11:00:05.346 plugin-container[62696:4165467] XType: XTFontStaticRegistry is enabled.
+Read port: 63880
+1656770405453	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656770409255	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T14:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T14:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T14:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T14:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+1656774001219	geckodriver	INFO	Listening on 127.0.0.1:65443
+1656774001850	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "65444" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefcptC7"
+*** You are running in headless mode.
+2022-07-02 12:00:02.938 firefox-bin[67615:4243564] XType: com.apple.fonts is not accessible.
+2022-07-02 12:00:02.938 firefox-bin[67615:4243564] XType: XTFontStaticRegistry is enabled.
+1656774002968	Marionette	INFO	Marionette enabled
+2022-07-02 12:00:03.759 plugin-container[67617:4243604] XType: com.apple.fonts is not accessible.
+2022-07-02 12:00:03.759 plugin-container[67617:4243604] XType: XTFontStaticRegistry is enabled.
+2022-07-02 12:00:04.020 plugin-container[67618:4243637] XType: com.apple.fonts is not accessible.
+2022-07-02 12:00:04.020 plugin-container[67618:4243637] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilefcptC7/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:65444/devtools/browser/a6456a11-81ff-46f5-8b5c-bdcd33f481d8
+1656774005524	Marionette	INFO	Listening on port 65464
+Read port: 65464
+1656774005615	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-07-02 12:00:05.726 plugin-container[67628:4243788] XType: com.apple.fonts is not accessible.
+2022-07-02 12:00:05.727 plugin-container[67628:4243788] XType: XTFontStaticRegistry is enabled.
+1656774009572	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T15:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T15:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T15:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T15:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+1656777601336	geckodriver	INFO	Listening on 127.0.0.1:50664
+1656777601998	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "50665" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexpqHdd"
+*** You are running in headless mode.
+2022-07-02 13:00:02.895 firefox-bin[73028:4322897] XType: com.apple.fonts is not accessible.
+2022-07-02 13:00:02.895 firefox-bin[73028:4322897] XType: XTFontStaticRegistry is enabled.
+1656777602918	Marionette	INFO	Marionette enabled
+2022-07-02 13:00:03.735 plugin-container[73030:4322946] XType: com.apple.fonts is not accessible.
+2022-07-02 13:00:03.736 plugin-container[73030:4322946] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+2022-07-02 13:00:04.135 plugin-container[73033:4322983] XType: com.apple.fonts is not accessible.
+2022-07-02 13:00:04.136 plugin-container[73033:4322983] XType: XTFontStaticRegistry is enabled.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexpqHdd/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:50665/devtools/browser/e1117d52-2fc7-41b3-adcd-9ee0f33130f8
+1656777605130	Marionette	INFO	Listening on port 50683
+Read port: 50683
+2022-07-02 13:00:05.348 plugin-container[73040:4323105] XType: com.apple.fonts is not accessible.
+2022-07-02 13:00:05.349 plugin-container[73040:4323105] XType: XTFontStaticRegistry is enabled.
+1656777605351	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656777609148	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T16:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T16:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T16:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T16:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+1656781201095	geckodriver	INFO	Listening on 127.0.0.1:52321
+1656781201755	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "52322" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile65sAxC"
+*** You are running in headless mode.
+2022-07-02 14:00:02.571 firefox-bin[78465:4402459] XType: com.apple.fonts is not accessible.
+2022-07-02 14:00:02.571 firefox-bin[78465:4402459] XType: XTFontStaticRegistry is enabled.
+1656781202589	Marionette	INFO	Marionette enabled
+2022-07-02 14:00:03.333 plugin-container[78470:4402500] XType: com.apple.fonts is not accessible.
+2022-07-02 14:00:03.335 plugin-container[78470:4402500] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+2022-07-02 14:00:03.678 plugin-container[78471:4402530] XType: com.apple.fonts is not accessible.
+2022-07-02 14:00:03.678 plugin-container[78471:4402530] XType: XTFontStaticRegistry is enabled.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile65sAxC/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:52322/devtools/browser/fb92599d-19ce-43cd-a0d1-f55025f5e9b6
+1656781204739	Marionette	INFO	Listening on port 52342
+Read port: 52342
+1656781204832	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-07-02 14:00:04.857 plugin-container[78480:4402659] XType: com.apple.fonts is not accessible.
+2022-07-02 14:00:04.857 plugin-container[78480:4402659] XType: XTFontStaticRegistry is enabled.
+1656781208992	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T17:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T17:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T17:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T17:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+1656784801848	geckodriver	INFO	Listening on 127.0.0.1:53871
+1656784802577	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "53872" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepPwKvC"
+*** You are running in headless mode.
+2022-07-02 15:00:03.404 firefox-bin[85171:4485396] XType: com.apple.fonts is not accessible.
+2022-07-02 15:00:03.404 firefox-bin[85171:4485396] XType: XTFontStaticRegistry is enabled.
+1656784803463	Marionette	INFO	Marionette enabled
+2022-07-02 15:00:04.257 plugin-container[85180:4485474] XType: com.apple.fonts is not accessible.
+2022-07-02 15:00:04.257 plugin-container[85180:4485474] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+2022-07-02 15:00:04.545 plugin-container[85181:4485501] XType: com.apple.fonts is not accessible.
+2022-07-02 15:00:04.545 plugin-container[85181:4485501] XType: XTFontStaticRegistry is enabled.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilepPwKvC/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:53872/devtools/browser/b2b4c52a-ccab-49e0-b95c-f50ec18b0677
+1656784805750	Marionette	INFO	Listening on port 53892
+Read port: 53892
+1656784805838	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-07-02 15:00:05.858 plugin-container[85184:4485614] XType: com.apple.fonts is not accessible.
+2022-07-02 15:00:05.860 plugin-container[85184:4485614] XType: XTFontStaticRegistry is enabled.
+1656784809744	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T18:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T18:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T18:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T18:00:12Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T18:00:15Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T18:00:15Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T18:00:15Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T18:00:15Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+1656788401713	geckodriver	INFO	Listening on 127.0.0.1:55563
+1656788402377	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "55564" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesFwSbI"
+*** You are running in headless mode.
+2022-07-02 16:00:03.358 firefox-bin[90791:4564654] XType: com.apple.fonts is not accessible.
+2022-07-02 16:00:03.359 firefox-bin[90791:4564654] XType: XTFontStaticRegistry is enabled.
+1656788403388	Marionette	INFO	Marionette enabled
+2022-07-02 16:00:04.234 plugin-container[90800:4564707] XType: com.apple.fonts is not accessible.
+2022-07-02 16:00:04.236 plugin-container[90800:4564707] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+2022-07-02 16:00:04.631 plugin-container[90801:4564744] XType: com.apple.fonts is not accessible.
+2022-07-02 16:00:04.632 plugin-container[90801:4564744] XType: XTFontStaticRegistry is enabled.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilesFwSbI/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:55564/devtools/browser/f58c5fd7-80eb-4225-b404-77c9308acbb7
+1656788405833	Marionette	INFO	Listening on port 55582
+Read port: 55582
+1656788406050	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-07-02 16:00:06.100 plugin-container[90802:4564863] XType: com.apple.fonts is not accessible.
+2022-07-02 16:00:06.100 plugin-container[90802:4564863] XType: XTFontStaticRegistry is enabled.
+1656788410113	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T19:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T19:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T19:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T19:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T19:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T19:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T19:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T19:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+1656792001775	geckodriver	INFO	Listening on 127.0.0.1:57186
+1656792002345	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "57187" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyYJiIr"
+*** You are running in headless mode.
+2022-07-02 17:00:03.254 firefox-bin[96014:4643801] XType: com.apple.fonts is not accessible.
+2022-07-02 17:00:03.255 firefox-bin[96014:4643801] XType: XTFontStaticRegistry is enabled.
+1656792003275	Marionette	INFO	Marionette enabled
+2022-07-02 17:00:03.984 plugin-container[96023:4643858] XType: com.apple.fonts is not accessible.
+2022-07-02 17:00:03.985 plugin-container[96023:4643858] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+2022-07-02 17:00:04.379 plugin-container[96024:4643885] XType: com.apple.fonts is not accessible.
+2022-07-02 17:00:04.380 plugin-container[96024:4643885] XType: XTFontStaticRegistry is enabled.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyYJiIr/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:57187/devtools/browser/3fa12501-93cf-4a70-9fec-cb8d28417078
+1656792005413	Marionette	INFO	Listening on port 57206
+Read port: 57206
+2022-07-02 17:00:05.581 plugin-container[96025:4643995] XType: com.apple.fonts is not accessible.
+2022-07-02 17:00:05.581 plugin-container[96025:4643995] XType: XTFontStaticRegistry is enabled.
+1656792005588	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656792010532	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T20:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T20:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T20:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T20:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T20:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T20:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T20:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T20:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+1656795601927	geckodriver	INFO	Listening on 127.0.0.1:58777
+1656795602697	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "58778" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTrjgRp"
+*** You are running in headless mode.
+2022-07-02 18:00:03.629 firefox-bin[2069:4723896] XType: com.apple.fonts is not accessible.
+2022-07-02 18:00:03.629 firefox-bin[2069:4723896] XType: XTFontStaticRegistry is enabled.
+1656795603649	Marionette	INFO	Marionette enabled
+2022-07-02 18:00:04.593 plugin-container[2079:4723942] XType: com.apple.fonts is not accessible.
+2022-07-02 18:00:04.594 plugin-container[2079:4723942] XType: XTFontStaticRegistry is enabled.
+2022-07-02 18:00:04.755 plugin-container[2081:4723979] XType: com.apple.fonts is not accessible.
+2022-07-02 18:00:04.755 plugin-container[2081:4723979] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileTrjgRp/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:58778/devtools/browser/215030e0-0043-496d-9f4a-b099ee1752d5
+1656795605977	Marionette	INFO	Listening on port 58796
+Read port: 58796
+1656795606270	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-07-02 18:00:06.273 plugin-container[2082:4724096] XType: com.apple.fonts is not accessible.
+2022-07-02 18:00:06.273 plugin-container[2082:4724096] XType: XTFontStaticRegistry is enabled.
+1656795610425	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T21:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T21:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T21:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T21:00:10Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T21:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T21:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T21:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T21:00:14Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+1656799201680	geckodriver	INFO	Listening on 127.0.0.1:60422
+1656799202332	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "60423" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileSnduiT"
+*** You are running in headless mode.
+2022-07-02 19:00:03.439 firefox-bin[8180:4805026] XType: com.apple.fonts is not accessible.
+2022-07-02 19:00:03.439 firefox-bin[8180:4805026] XType: XTFontStaticRegistry is enabled.
+1656799203501	Marionette	INFO	Marionette enabled
+2022-07-02 19:00:04.441 plugin-container[8190:4805068] XType: com.apple.fonts is not accessible.
+2022-07-02 19:00:04.441 plugin-container[8190:4805068] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+2022-07-02 19:00:04.819 plugin-container[8191:4805098] XType: com.apple.fonts is not accessible.
+2022-07-02 19:00:04.819 plugin-container[8191:4805098] XType: XTFontStaticRegistry is enabled.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSnduiT/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:60423/devtools/browser/b7150bd9-35d1-426c-a59d-0fcd0d98d27e
+1656799205825	Marionette	INFO	Listening on port 60443
+2022-07-02 19:00:05.919 plugin-container[8192:4805201] XType: com.apple.fonts is not accessible.
+2022-07-02 19:00:05.919 plugin-container[8192:4805201] XType: XTFontStaticRegistry is enabled.
+Read port: 60443
+1656799206045	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656799209701	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T22:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T22:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T22:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T22:00:09Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T22:00:13Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T22:00:13Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T22:00:13Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T22:00:13Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+1656802806081	geckodriver	INFO	Listening on 127.0.0.1:63002
+1656802806959	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "63003" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileerLGJP"
+*** You are running in headless mode.
+2022-07-02 20:00:12.414 firefox-bin[14007:4895804] XType: com.apple.fonts is not accessible.
+2022-07-02 20:00:12.418 firefox-bin[14007:4895804] XType: XTFontStaticRegistry is enabled.
+1656802812581	Marionette	INFO	Marionette enabled
+2022-07-02 20:00:18.513 plugin-container[14022:4896029] XType: com.apple.fonts is not accessible.
+2022-07-02 20:00:18.514 plugin-container[14022:4896029] XType: XTFontStaticRegistry is enabled.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+2022-07-02 20:00:22.238 plugin-container[14030:4896162] XType: com.apple.fonts is not accessible.
+2022-07-02 20:00:22.239 plugin-container[14030:4896162] XType: XTFontStaticRegistry is enabled.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileerLGJP/search.json.mozlz4", (void 0)))
+2022-07-02 20:00:27.592 plugin-container[14040:4896388] XType: com.apple.fonts is not accessible.
+2022-07-02 20:00:27.594 plugin-container[14040:4896388] XType: XTFontStaticRegistry is enabled.
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:63003/devtools/browser/2df4fd8d-b779-45af-ba61-73ccf5906c63
+1656802855144	Marionette	INFO	Listening on port 63184
+Read port: 63184
+1656802856858	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+1656804240429	geckodriver	INFO	Listening on 127.0.0.1:53473
+1656804240942	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "53474" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/q2/knsrkkc56871d1n55ck4rzr00000gn/T/rust_mozprofilePiZRsq"
+*** You are running in headless mode.
+1656804241912	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/q2/knsrkkc56871d1n55ck4rzr00000gn/T/rust_mozprofilePiZRsq/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:53474/devtools/browser/0d441f25-80ec-4019-b0e2-8fdd8b57b8a7
+1656804245559	Marionette	INFO	Listening on port 53517
+Read port: 53517
+1656804245657	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656804251589	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-02T23:24:11Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T23:24:11Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T23:24:11Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T23:24:11Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T23:24:19Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T23:24:19Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T23:24:19Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-02T23:24:19Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.2a556858.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1656804280903	Marionette	INFO	Stopped listening on port 53517
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+
+###!!! [Child][PBackgroundChild] Error: Send(msgname=PBackgroundLSSnapshot::Msg_Finish) Channel error: cannot send/recv
+
+
+###!!! [Child][PBackgroundChild] Error: Send(msgname=PBackgroundLSSnapshot::Msg_DeleteMe) Channel error: cannot send/recv
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+
+###!!! [Child][PBackgroundChild] Error: SendAndWait(msgname=PBackgroundLSDatabase::Msg_PBackgroundLSSnapshotConstructor) Channel error: cannot send/recv
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+
+###!!! [Child][PBackgroundChild] Error: SendAndWait(msgname=PBackgroundLSDatabase::Msg_PBackgroundLSSnapshotConstructor) Channel error: cannot send/recv
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+
+###!!! [Child][PBackgroundChild] Error: SendAndWait(msgname=PBackgroundLSDatabase::Msg_PBackgroundLSSnapshotConstructor) Channel error: cannot send/recv
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
