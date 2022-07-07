@@ -2,12 +2,7 @@
 import serial
 import time
 import os
-import sys
-import unidecode
 import datetime
-import subprocess
-import threading
-from serial import Serial
 from flask import Flask, render_template
 from datetime import datetime
 import sqlite3
@@ -23,7 +18,7 @@ def home():
         cur = con.cursor()
         lastOne = cur.execute('SELECT * FROM monthly_stats ORDER BY date DESC').fetchall()
         dataLast = lastOne[0]
-        dataFirst = lastOne[10] #Number of Lines to Calculate Rate
+        dataFirst = lastOne[6] #Number of Lines to Calculate Rate
 
         #Hours Dif in the last <daraFirst> entries
         timeLast = datetime.fromtimestamp(dataLast[0])
@@ -65,7 +60,7 @@ def home():
         estimatedMil = estimatedTX.split(".")[0]
         estimatedDec = (estimatedTX.split(".")[1])[0]
         estFinal = totalLast + " / " + estimatedMil + "." + estimatedDec + "K"
-
+        print("TOTAL ESTIMADO EM 30 DE SETEMBRO: ", estFinal)
         estFinal = estFinal.encode("utf-8")
         find_ports()
 
