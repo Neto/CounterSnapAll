@@ -57,6 +57,7 @@ driver.implicitly_wait(10)
 #BRASIL
 
 #EMail
+
 cookies = {
     '_gid': 'GA1.3.841158784.1657081595',
     'NPS_efd9b1a6_last_seen': '1657081628591',
@@ -65,30 +66,26 @@ cookies = {
     'driftt_aid': 'a0fe3ffd-3efa-4b45-8109-155e76b47eb0',
     '_hjSessionUser_863034': 'eyJpZCI6ImE3NDdhZTkwLTc4MjgtNTUyZS04NGFjLWM4YTM2OTIyM2M3OSIsImNyZWF0ZWQiOjE2NTcwODE2Mjc3MjYsImV4aXN0aW5nIjp0cnVlfQ==',
     '_hjSessionUser_2716062': 'eyJpZCI6IjY4MzkzNTZkLWYwYzItNWZlZi04NjA5LTE0ZDYyYjlmYzA4NSIsImNyZWF0ZWQiOjE2NTcwODE1OTU3NzAsImV4aXN0aW5nIjp0cnVlfQ==',
-    'NPS_efd9b1a6_throttle': '1657169408358',
     'split': '%7B%22xp_ab_test%22%3A%22variant%22%2C%22caterpie_activation_strategies%22%3A%22control%22%7D',
     'ajs_group_id': '434927',
-    'ak_bmsc': '0BF3ACAD0076809F86172A695EAAC455~000000000000000000000000000000~YAAQ1boXAlxjBquBAQAAS0nM1hCEi0sqdVy53x1CdNIZ18nMT/OXvBWXz75DnXJ2xMO+AHg4wTsMtipeO/eEsuLYvDnDRrSDXJz/8ZfmzqsoNSrv/PGnlXQbg/6YWmMw2bALeXgcuCuqwCqV9oz5wc6Eb05b46JcqyayszE6QfcEhruan4kKOAXFgU4JzIrlpBGYCGXizV3jjcG6uVi88E5d0+m4Wxpyf3RNh39qgT8UTSNS8aHipAMMYnVV05TtFszDVUJmnC6UJbJrQABsVZieYSJw94nxleRTjQM355DrCxRtIrnr99azQ3ABfmJv/HegDcwHvKmoe2/R0cWCBDxY7QDXqImKPi0T8SdGayee7sK2g5xXtfSzqJuU+nA7VjpqT4qyVG0VZW4aox+bMw==',
-    '_hjSession_2716062': 'eyJpZCI6ImRlZjlkYWJjLWI0YjktNDAzMi04NjA4LTI3MzVjNzI2ZWU5NyIsImNyZWF0ZWQiOjE2NTcxNjYxMjE4NDksImluU2FtcGxlIjpmYWxzZX0=',
-    '_hjAbsoluteSessionInProgress': '0',
-    '_gac_UA-17276574-1': '1.1657126111.%25252525252528not%25252525252520set%25252525252529',
-    '_gat_UA-17276574-1': '1',
-    '_ga': 'GA1.1.1486625735.1657081595',
-    '__rdsid': 'ef0ef4c4e015e6e4bcc92900efcc7e71',
-    '_hjIncludedInSessionSample': '0',
-    '_hjSession_863034': 'eyJpZCI6IjgwMjIxOTdlLTE3NWUtNGM0NS04MTNhLThiNjFiNGFkNTVmZiIsImNyZWF0ZWQiOjE2NTcxNjYzMTc0NTYsImluU2FtcGxlIjpmYWxzZX0=',
     'ajs_user_id': '697398',
     'ajs_anonymous_id': '2e1316f6-da5f-4f8b-bbd3-cdf64038e530',
-    '_hjCachedUserAttributes': 'eyJhdHRyaWJ1dGVzIjp7IkNvdW50cnlfSVBzdGFjayI6IkJSIiwiYWNjb3VudF9pZCI6IjQzNDkyNyIsImNvdW50cnlfY29kZSI6IkJSIiwiZW1haWwiOiJuZXRvQHNwaW5vZmYuZGlnaXRhbCIsImxhbmd1YWdlIjoicHQtQlIiLCJwbGFuIjoiUHJvIiwicm9sZSI6IkFETUlOIn0sInVzZXJJZCI6IjY5NzM5OCJ9',
-    'drift_campaign_refresh': '3f6ecd9b-12f9-4c73-b3ea-01d0e5f4be1d',
     'cto_bundle': 'GoVtFV9MS05nTzFUYVB4NmI5NFRWaU56Vk5oVXM5WDk1SlAlMkJGNWZwJTJCT2VCN2liSW85MlVMTGg3Ym5LdzRzNFVpOFFGcHJHQXlNRSUyRnNad3hZNFJmcDhMQTZpTDgxZ1NZOFZWejRrTlZLTkpPTG5BcVJSWDh0dmZyS29yaUc2Sk5DaFFNRXJHZ3ZFYlJieEZmUkwxR09abjN2VVJxTTVsZWp0ZnByMXozaE5mWG92NzAlM0Q',
-    'drift_eid': '697398',
+    '__rdsid': 'b71963fb2d396e768b93304090f445a6',
+    'ak_bmsc': '85EB1FD97BE011C5C6855E82AF1E3758~000000000000000000000000000000~YAAQjs1YaLnXnpiBAQAA6J772RDh5xrLbiSdE3ZFKlGeuiC+4Vayplvt7D+lRxWgk9sHUCH4x3rcKv7E5FiC8jbAqF+gPTgQqiEIrfiEpuiEKcZ1J6nNJOW4d+jDmQrcrGCgJAX66FfLC+RABGQID3P+lnmyzRdvP4jEunzeFbfkD5f1JFKSt0BpdPVDcWrjs+f8pEiwTlsLt8TqRlCdmERckgDwyhV8CEfO+fgk1i9NXMrKQN4mbyKW/FjAsNf9B/b1vmGmBhbpbHFaXFHvqPSCMojZByH/Qs+l5XAqZlr8NNhvsczi0kJJadd1vjKBkmm48E17AylKs6d/OE4086y/7ktzRTdHP+wcMBwctXczHgvUQ1ZfHHJPFc2DnuZ9KC1gkmAdUFPh6WnhT0GmTA==',
+    '_hjAbsoluteSessionInProgress': '0',
+    '_ga': 'GA1.3.1486625735.1657081595',
+    '_gac_UA-17276574-1': '1.1657219555.%2528not%2520set%2529',
+    '_ga_GYGJG4ZD5K': 'GS1.1.1657219555.4.1.1657219589.0',
+    '_hjIncludedInSessionSample': '0',
+    '_hjSession_863034': 'eyJpZCI6IjRjOWNmOTMyLTJlY2MtNDQzMS1hMGM4LWZjNGE4Y2MwYTE0MyIsImNyZWF0ZWQiOjE2NTcyMTk1OTA0MzAsImluU2FtcGxlIjpmYWxzZX0=',
+    '_hjCachedUserAttributes': 'eyJhdHRyaWJ1dGVzIjp7IkNvdW50cnlfSVBzdGFjayI6IkJSIiwiYWNjb3VudF9pZCI6IjQzNDkyNyIsImNvdW50cnlfY29kZSI6IkJSIiwiZW1haWwiOiJuZXRvQHNwaW5vZmYuZGlnaXRhbCIsImxhbmd1YWdlIjoicHQtQlIiLCJwbGFuIjoiUHJvIiwicm9sZSI6IkFETUlOIn0sInVzZXJJZCI6IjY5NzM5OCJ9',
     '_uetsid': 'e5ef2030fce311ecb53bedaab331166c',
     '_uetvid': 'e5ef5cc0fce311ecac2e85d56bbe46fb',
-    'bm_sv': 'FA5E34C6951A177F40713EF66FDA4FEA~YAAQFaLSvZ7y7sKBAQAASm7P1hDvXoD/44SSjhB60ID8LFOClb2xT5DibKvLmygYsu7XVnZqkgmH5wGbCJzwKOMe0dNAf4w2XFeP2mJTe3TSe/wzLHocZSRpRqV4rG5S/n1G1ehu42Yawn4U9IYm7wgcNKIT+Dh+Furh67nX/ZToSswzRGU3WyqKT07+u7MTWSE8RCb7v8yFPwR7bI9IjHuLZ1QaQ042nGDycAe3366fjvtUbzALwJhJRJPyE8Fz8aifhXv9JA==~1',
-    'intercom-session-hq3qq4eb': 'NTdNbmNxTVlPQi81czYyazlBRjhpaWlkWnVMeFdjdVJoQjVnNG0xaFU2Q1M3WllMT3FwYmthQVI5VmVUMHdmUC0tUVJMaXZoUit4T2hWcFZwSXNaTTgzQT09--c09eaf7a7ea2f4b18640f757c66faa140e52ceff',
-    '_ga_GYGJG4ZD5K': 'GS1.1.1657166122.3.1.1657166329.0',
-    '_dd_s': 'rum=0&expire=1657167226448',
+    'bm_sv': '4506CA02D2A5D2AEB51206445EB54FCC~YAAQjs1YaOffnpiBAQAARSz82RDnqHyL2mYeJAtRrQAcIfbS+j8QLWBJF7XFjiRby8OxaTLGeGFEocK29yX36HbilMDz7512cYjB0QVu9Ea898CtuSORt4AGCeuY+bCApfdjzRONEqpetC21DOSNL+p2z45hkz0f6uUTH0QD9P/Ep862epAMlJdJdMlOpizI+om42E891WDMwthGfbGIvGhzggK5DhOUfjRc9DSlDBCq45n5kXhUjIrEe36fg+sZDZZa/QJG~1',
+    'drift_eid': '697398',
+    'intercom-session-hq3qq4eb': 'ZGU3NzJNc21aRlRFUTZNcWVlS1NiVThYOVNnOEtaeDhYaUcxUXhCSkpBWlFENkZMbXN5dHdGV09Ba1lJTWIzMC0tVWljbURXNnM0M3lNSmRhS0JSM1MxUT09--742e03b7afab97780df7b3cddd705ffab3f8145c',
+    '_dd_s': 'rum=0&expire=1657222470471',
 }
 
 headers = {
@@ -97,15 +94,15 @@ headers = {
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
     # Requests sorts cookies= alphabetically
-    # 'cookie': '_gid=GA1.3.841158784.1657081595; NPS_efd9b1a6_last_seen=1657081628591; intercom-id-hq3qq4eb=e5043f4d-96ed-4f4e-b632-499a74d25eb2; drift_aid=a0fe3ffd-3efa-4b45-8109-155e76b47eb0; driftt_aid=a0fe3ffd-3efa-4b45-8109-155e76b47eb0; _hjSessionUser_863034=eyJpZCI6ImE3NDdhZTkwLTc4MjgtNTUyZS04NGFjLWM4YTM2OTIyM2M3OSIsImNyZWF0ZWQiOjE2NTcwODE2Mjc3MjYsImV4aXN0aW5nIjp0cnVlfQ==; _hjSessionUser_2716062=eyJpZCI6IjY4MzkzNTZkLWYwYzItNWZlZi04NjA5LTE0ZDYyYjlmYzA4NSIsImNyZWF0ZWQiOjE2NTcwODE1OTU3NzAsImV4aXN0aW5nIjp0cnVlfQ==; NPS_efd9b1a6_throttle=1657169408358; split=%7B%22xp_ab_test%22%3A%22variant%22%2C%22caterpie_activation_strategies%22%3A%22control%22%7D; ajs_group_id=434927; ak_bmsc=0BF3ACAD0076809F86172A695EAAC455~000000000000000000000000000000~YAAQ1boXAlxjBquBAQAAS0nM1hCEi0sqdVy53x1CdNIZ18nMT/OXvBWXz75DnXJ2xMO+AHg4wTsMtipeO/eEsuLYvDnDRrSDXJz/8ZfmzqsoNSrv/PGnlXQbg/6YWmMw2bALeXgcuCuqwCqV9oz5wc6Eb05b46JcqyayszE6QfcEhruan4kKOAXFgU4JzIrlpBGYCGXizV3jjcG6uVi88E5d0+m4Wxpyf3RNh39qgT8UTSNS8aHipAMMYnVV05TtFszDVUJmnC6UJbJrQABsVZieYSJw94nxleRTjQM355DrCxRtIrnr99azQ3ABfmJv/HegDcwHvKmoe2/R0cWCBDxY7QDXqImKPi0T8SdGayee7sK2g5xXtfSzqJuU+nA7VjpqT4qyVG0VZW4aox+bMw==; _hjSession_2716062=eyJpZCI6ImRlZjlkYWJjLWI0YjktNDAzMi04NjA4LTI3MzVjNzI2ZWU5NyIsImNyZWF0ZWQiOjE2NTcxNjYxMjE4NDksImluU2FtcGxlIjpmYWxzZX0=; _hjAbsoluteSessionInProgress=0; _gac_UA-17276574-1=1.1657126111.%25252525252528not%25252525252520set%25252525252529; _gat_UA-17276574-1=1; _ga=GA1.1.1486625735.1657081595; __rdsid=ef0ef4c4e015e6e4bcc92900efcc7e71; _hjIncludedInSessionSample=0; _hjSession_863034=eyJpZCI6IjgwMjIxOTdlLTE3NWUtNGM0NS04MTNhLThiNjFiNGFkNTVmZiIsImNyZWF0ZWQiOjE2NTcxNjYzMTc0NTYsImluU2FtcGxlIjpmYWxzZX0=; ajs_user_id=697398; ajs_anonymous_id=2e1316f6-da5f-4f8b-bbd3-cdf64038e530; _hjCachedUserAttributes=eyJhdHRyaWJ1dGVzIjp7IkNvdW50cnlfSVBzdGFjayI6IkJSIiwiYWNjb3VudF9pZCI6IjQzNDkyNyIsImNvdW50cnlfY29kZSI6IkJSIiwiZW1haWwiOiJuZXRvQHNwaW5vZmYuZGlnaXRhbCIsImxhbmd1YWdlIjoicHQtQlIiLCJwbGFuIjoiUHJvIiwicm9sZSI6IkFETUlOIn0sInVzZXJJZCI6IjY5NzM5OCJ9; drift_campaign_refresh=3f6ecd9b-12f9-4c73-b3ea-01d0e5f4be1d; cto_bundle=GoVtFV9MS05nTzFUYVB4NmI5NFRWaU56Vk5oVXM5WDk1SlAlMkJGNWZwJTJCT2VCN2liSW85MlVMTGg3Ym5LdzRzNFVpOFFGcHJHQXlNRSUyRnNad3hZNFJmcDhMQTZpTDgxZ1NZOFZWejRrTlZLTkpPTG5BcVJSWDh0dmZyS29yaUc2Sk5DaFFNRXJHZ3ZFYlJieEZmUkwxR09abjN2VVJxTTVsZWp0ZnByMXozaE5mWG92NzAlM0Q; drift_eid=697398; _uetsid=e5ef2030fce311ecb53bedaab331166c; _uetvid=e5ef5cc0fce311ecac2e85d56bbe46fb; bm_sv=FA5E34C6951A177F40713EF66FDA4FEA~YAAQFaLSvZ7y7sKBAQAASm7P1hDvXoD/44SSjhB60ID8LFOClb2xT5DibKvLmygYsu7XVnZqkgmH5wGbCJzwKOMe0dNAf4w2XFeP2mJTe3TSe/wzLHocZSRpRqV4rG5S/n1G1ehu42Yawn4U9IYm7wgcNKIT+Dh+Furh67nX/ZToSswzRGU3WyqKT07+u7MTWSE8RCb7v8yFPwR7bI9IjHuLZ1QaQ042nGDycAe3366fjvtUbzALwJhJRJPyE8Fz8aifhXv9JA==~1; intercom-session-hq3qq4eb=NTdNbmNxTVlPQi81czYyazlBRjhpaWlkWnVMeFdjdVJoQjVnNG0xaFU2Q1M3WllMT3FwYmthQVI5VmVUMHdmUC0tUVJMaXZoUit4T2hWcFZwSXNaTTgzQT09--c09eaf7a7ea2f4b18640f757c66faa140e52ceff; _ga_GYGJG4ZD5K=GS1.1.1657166122.3.1.1657166329.0; _dd_s=rum=0&expire=1657167226448',
-    'if-none-match': 'W/"3bc8f9bfdaa3c3b7832f57bd79312697"',
-    'referer': 'https://app.rdstation.com.br/nova-segmentacao',
+    # 'cookie': '_gid=GA1.3.841158784.1657081595; NPS_efd9b1a6_last_seen=1657081628591; intercom-id-hq3qq4eb=e5043f4d-96ed-4f4e-b632-499a74d25eb2; drift_aid=a0fe3ffd-3efa-4b45-8109-155e76b47eb0; driftt_aid=a0fe3ffd-3efa-4b45-8109-155e76b47eb0; _hjSessionUser_863034=eyJpZCI6ImE3NDdhZTkwLTc4MjgtNTUyZS04NGFjLWM4YTM2OTIyM2M3OSIsImNyZWF0ZWQiOjE2NTcwODE2Mjc3MjYsImV4aXN0aW5nIjp0cnVlfQ==; _hjSessionUser_2716062=eyJpZCI6IjY4MzkzNTZkLWYwYzItNWZlZi04NjA5LTE0ZDYyYjlmYzA4NSIsImNyZWF0ZWQiOjE2NTcwODE1OTU3NzAsImV4aXN0aW5nIjp0cnVlfQ==; split=%7B%22xp_ab_test%22%3A%22variant%22%2C%22caterpie_activation_strategies%22%3A%22control%22%7D; ajs_group_id=434927; ajs_user_id=697398; ajs_anonymous_id=2e1316f6-da5f-4f8b-bbd3-cdf64038e530; cto_bundle=GoVtFV9MS05nTzFUYVB4NmI5NFRWaU56Vk5oVXM5WDk1SlAlMkJGNWZwJTJCT2VCN2liSW85MlVMTGg3Ym5LdzRzNFVpOFFGcHJHQXlNRSUyRnNad3hZNFJmcDhMQTZpTDgxZ1NZOFZWejRrTlZLTkpPTG5BcVJSWDh0dmZyS29yaUc2Sk5DaFFNRXJHZ3ZFYlJieEZmUkwxR09abjN2VVJxTTVsZWp0ZnByMXozaE5mWG92NzAlM0Q; __rdsid=b71963fb2d396e768b93304090f445a6; ak_bmsc=85EB1FD97BE011C5C6855E82AF1E3758~000000000000000000000000000000~YAAQjs1YaLnXnpiBAQAA6J772RDh5xrLbiSdE3ZFKlGeuiC+4Vayplvt7D+lRxWgk9sHUCH4x3rcKv7E5FiC8jbAqF+gPTgQqiEIrfiEpuiEKcZ1J6nNJOW4d+jDmQrcrGCgJAX66FfLC+RABGQID3P+lnmyzRdvP4jEunzeFbfkD5f1JFKSt0BpdPVDcWrjs+f8pEiwTlsLt8TqRlCdmERckgDwyhV8CEfO+fgk1i9NXMrKQN4mbyKW/FjAsNf9B/b1vmGmBhbpbHFaXFHvqPSCMojZByH/Qs+l5XAqZlr8NNhvsczi0kJJadd1vjKBkmm48E17AylKs6d/OE4086y/7ktzRTdHP+wcMBwctXczHgvUQ1ZfHHJPFc2DnuZ9KC1gkmAdUFPh6WnhT0GmTA==; _hjAbsoluteSessionInProgress=0; _ga=GA1.3.1486625735.1657081595; _gac_UA-17276574-1=1.1657219555.%2528not%2520set%2529; _ga_GYGJG4ZD5K=GS1.1.1657219555.4.1.1657219589.0; _hjIncludedInSessionSample=0; _hjSession_863034=eyJpZCI6IjRjOWNmOTMyLTJlY2MtNDQzMS1hMGM4LWZjNGE4Y2MwYTE0MyIsImNyZWF0ZWQiOjE2NTcyMTk1OTA0MzAsImluU2FtcGxlIjpmYWxzZX0=; _hjCachedUserAttributes=eyJhdHRyaWJ1dGVzIjp7IkNvdW50cnlfSVBzdGFjayI6IkJSIiwiYWNjb3VudF9pZCI6IjQzNDkyNyIsImNvdW50cnlfY29kZSI6IkJSIiwiZW1haWwiOiJuZXRvQHNwaW5vZmYuZGlnaXRhbCIsImxhbmd1YWdlIjoicHQtQlIiLCJwbGFuIjoiUHJvIiwicm9sZSI6IkFETUlOIn0sInVzZXJJZCI6IjY5NzM5OCJ9; _uetsid=e5ef2030fce311ecb53bedaab331166c; _uetvid=e5ef5cc0fce311ecac2e85d56bbe46fb; bm_sv=4506CA02D2A5D2AEB51206445EB54FCC~YAAQjs1YaOffnpiBAQAARSz82RDnqHyL2mYeJAtRrQAcIfbS+j8QLWBJF7XFjiRby8OxaTLGeGFEocK29yX36HbilMDz7512cYjB0QVu9Ea898CtuSORt4AGCeuY+bCApfdjzRONEqpetC21DOSNL+p2z45hkz0f6uUTH0QD9P/Ep862epAMlJdJdMlOpizI+om42E891WDMwthGfbGIvGhzggK5DhOUfjRc9DSlDBCq45n5kXhUjIrEe36fg+sZDZZa/QJG~1; drift_eid=697398; intercom-session-hq3qq4eb=ZGU3NzJNc21aRlRFUTZNcWVlS1NiVThYOVNnOEtaeDhYaUcxUXhCSkpBWlFENkZMbXN5dHdGV09Ba1lJTWIzMC0tVWljbURXNnM0M3lNSmRhS0JSM1MxUT09--742e03b7afab97780df7b3cddd705ffab3f8145c; _dd_s=rum=0&expire=1657222470471',
+    'if-none-match': 'W/"9c169b5a4c76a2fedd3989de18342464"',
+    'referer': 'https://accounts.rdstation.com.br/?affiliate_id=%28not%20set%29&email_signup_account=false&exist_account=false&gclid=%28not%20set%29&lmdsid=%28not%20set%29&locale=pt-BR&redirect_to=https%3A%2F%2Fapp.rdstation.com.br%2Fauth%2Fcallback&referrer=%28not%20set%29&show_signup_account=false&signup_final_step=false&trial_origin=%28not%20set%29&utm_campaign=%28not%20set%29&utm_medium=%28not%20set%29&utm_source=%28not%20set%29&utm_term=%28not%20set%29&xtra=%28not%20set%29',
     'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
     'sec-ch-ua-mobile': '?0',
     'sec-ch-ua-platform': '"macOS"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
+    'sec-fetch-site': 'same-site',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
@@ -116,6 +113,7 @@ params = {
 }
 
 response = requests.get('https://app.rdstation.com.br/leads', params=params, cookies=cookies, headers=headers)
+
 
 soup = BeautifulSoup(response.content, 'html.parser')
 
@@ -141,9 +139,9 @@ youtube_count = youtube_mil + "." + youtube_dec + "K"
 #YouTubeL
 driver.get('https://www.youtube.com/c/SnapdragonLatam')
 youtube_countL = driver.find_element(By.ID,'subscriber-count').text.split(' ')[0]
-youtube_milL = youtube_countL
-youtube_decL = youtube_countL
-youtube_countL = youtube_decL + ""
+youtube_milL = youtube_countL.split('.')[0]
+youtube_decL = (youtube_countL.split('.')[1])[0]
+youtube_countL = youtube_milL + "." + youtube_decL + "K"
 
 # Get Twitter followers
 driver.get('https://twitter.com/snapdragon_BRA')
@@ -178,7 +176,7 @@ driver.close()
 
 emailNumber = float(email_count.split('K')[0])
 youtubeBrNumber = float(youtube_count.split('K')[0])
-youtubeLNumber = float(youtube_countL)
+youtubeLNumber = float(youtube_countL.split('K')[0])
 
 twitterBrNumber = float(twitter_count.split('K')[0])
 twitterLtNumber = float(twitter_countL.split('K')[0]) 
