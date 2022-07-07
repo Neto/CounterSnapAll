@@ -1,0 +1,5 @@
+{
+    "port": "/dev/tty.usbmodem3442301",
+    "board": "arduino:avr:uno",
+    "sketch": "../WiFiTest/WiFiTest.ino"
+}
