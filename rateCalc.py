@@ -23,7 +23,7 @@ def home():
         cur = con.cursor()
         lastOne = cur.execute('SELECT * FROM monthly_stats ORDER BY date DESC').fetchall()
         dataLast = lastOne[0]
-        dataFirst = lastOne[60] #Number of Lines to Calculate Rate
+        dataFirst = lastOne[10] #Number of Lines to Calculate Rate
 
         #Hours Dif in the last <daraFirst> entries
         timeLast = datetime.fromtimestamp(dataLast[0])
@@ -64,22 +64,17 @@ def home():
         estimatedTX = str(estimatedStr)
         estimatedMil = estimatedTX.split(".")[0]
         estimatedDec = (estimatedTX.split(".")[1])[0]
-        estFinal = estimatedMil + "." + estimatedDec + " K"
-        estiText = estFinal
+        estFinal = totalLast + " / " + estimatedMil + "." + estimatedDec + "K"
 
-        print(estiText)
-
-        estiText = estiText.encode("utf-8")
+        estFinal = estFinal.encode("utf-8")
         find_ports()
 
-        out = os.popen('ls /dev/cu.usb*').read()
+        out = os.popen('ls /dev/tty.usb*').read()
         out1 = out.splitlines()
         
         find_ports.port1a = out1[0]
         find_ports.port2a = out1[1]
         find_ports.port3a = out1[2]
-
-        print(find_ports)
 
         os.system("fuser " + find_ports.port1a)
         os.system("fuser " + find_ports.port2a)
@@ -89,7 +84,7 @@ def home():
         port = find_ports.port3a # note I'm using Mac OS-X
         ard = serial.Serial(port,9600,timeout=5)
         time.sleep(3) # wait for Arduino
-        ard.write(estiText)
+        ard.write(estFinal)
         time.sleep(2)
         ard.close
 
