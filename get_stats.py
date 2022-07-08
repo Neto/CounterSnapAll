@@ -71,22 +71,24 @@ cookies = {
     'ajs_user_id': '697398',
     'ajs_anonymous_id': '2e1316f6-da5f-4f8b-bbd3-cdf64038e530',
     'cto_bundle': 'GoVtFV9MS05nTzFUYVB4NmI5NFRWaU56Vk5oVXM5WDk1SlAlMkJGNWZwJTJCT2VCN2liSW85MlVMTGg3Ym5LdzRzNFVpOFFGcHJHQXlNRSUyRnNad3hZNFJmcDhMQTZpTDgxZ1NZOFZWejRrTlZLTkpPTG5BcVJSWDh0dmZyS29yaUc2Sk5DaFFNRXJHZ3ZFYlJieEZmUkwxR09abjN2VVJxTTVsZWp0ZnByMXozaE5mWG92NzAlM0Q',
-    '__rdsid': 'b71963fb2d396e768b93304090f445a6',
-    '_ga': 'GA1.3.1486625735.1657081595',
-    '_gac_UA-17276574-1': '1.1657219555.%2528not%2520set%2529',
-    '_ga_GYGJG4ZD5K': 'GS1.1.1657219555.4.1.1657219589.0',
-    '_hjCachedUserAttributes': 'eyJhdHRyaWJ1dGVzIjp7IkNvdW50cnlfSVBzdGFjayI6IkJSIiwiYWNjb3VudF9pZCI6IjQzNDkyNyIsImNvdW50cnlfY29kZSI6IkJSIiwiZW1haWwiOiJuZXRvQHNwaW5vZmYuZGlnaXRhbCIsImxhbmd1YWdlIjoicHQtQlIiLCJwbGFuIjoiUHJvIiwicm9sZSI6IkFETUlOIn0sInVzZXJJZCI6IjY5NzM5OCJ9',
-    'drift_eid': '697398',
-    'ak_bmsc': '10F6F829779C60943AF90FF238F6D4C0~000000000000000000000000000000~YAAQVv4pFzR+p7CBAQAAYqSP2hAw0O9X5Fq2x2AxBGV9Sq2tb8DpC1q4Cv4XflqEDg+9Pi2hBvucrkqydn0UoIng0XvvmLjnQDmGPOptUvwecCPGRg5WuM0u2LC2u1MCfQrY+CVNGsW0JzWn7sNQk5beysPmnCISRQOFq+YhZRUgUQTlV14Y0STTKP9g0Rh4Lt4nLq/rvAD/gmlNUymo0W5ztlWI1yOurtcXC9zpAtf+/gutauT37lPc1epjwaoEvhLIhZJ7SeZkyaGfJKUjUeETCsFXggDc9XyXdL6kPugYWoA2lz6/437C1RnLxKbIHbZBYu67Wpk/gRN4X5omhtK0scEjd8mkrNdUORwd0MEmc8sfhVIvZEoqhwTbF6YpiSIIGP9ro5vjhL7Ss9WLLg==',
-    '_hjIncludedInSessionSample': '0',
-    '_hjSession_863034': 'eyJpZCI6IjQzMzE5NWI1LTY0NjQtNDYzNy04YTdjLTcyY2M4MTI3MzkxYSIsImNyZWF0ZWQiOjE2NTcyMjkyNTYzODYsImluU2FtcGxlIjpmYWxzZX0=',
+    '__rdsid': 'dbd63b9d3653e6d749a8d0342788ec9b',
+    'ak_bmsc': '9879A6F65AF2BF88FDF2EE932C34DC60~000000000000000000000000000000~YAAQT9PPFzjyYLOBAQAA1jK73BCBgxMGSDePWE4bdgAeFP8aDWEh7EzdtjOcm1XO7MFXNI77OZQ44o+Of92muQ5zZ0ZSC6Zh8zA4lR8O7GJ/TyFqmre1USae3YwEqO2o/ahn9WH8Nvw6xOiGnogDw/4/i3pv/qYXwTXqDN9CdLfrVjY9Kz+UBVZ41SuV2YgyeuBI0Rt3eA8p7kFToM54EGPfsijd7Bk3WbZeiLz9mFX5PpUhe1/eTqzN94sSnu8MHVicHtF9Luyx/pL3M5WM50xZxnVHMest/FH1Y6GYuikG7n1djgetR5690LaXAz66FTLGTlThdKbtteKoqbHKH9JBz2yqNEM3DmvafHMII2XAQBNv2Z7CVdaBpfRSxkjbhBS1CKpGKl4H4AqrBgSIPw==',
+    '_hjSession_2716062': 'eyJpZCI6ImQ2NjIzYmZmLWMzZDUtNDdiNi1iOWNlLTE3NGZjNTk5NzM2MiIsImNyZWF0ZWQiOjE2NTcyNjU2NjU0MzksImluU2FtcGxlIjp0cnVlfQ==',
     '_hjAbsoluteSessionInProgress': '0',
-    'drift_campaign_refresh': '9594e6fe-d040-49d6-a0af-7f5765519f52',
+    '_gac_UA-17276574-1': '1.1657265666.%2528not%2520set%2529',
+    '_ga': 'GA1.1.1486625735.1657081595',
+    '_ga_GYGJG4ZD5K': 'GS1.1.1657265665.5.1.1657265697.0',
+    '_hjIncludedInSessionSample': '1',
+    '_hjSession_863034': 'eyJpZCI6IjJlNTMyNzcyLWM4MTctNDBiNC1hNmYxLTVmNDIyOGQzZmM4NyIsImNyZWF0ZWQiOjE2NTcyNjU2OTkyMjMsImluU2FtcGxlIjp0cnVlfQ==',
+    '_hjIncludedInPageviewSample': '1',
+    '_hjCachedUserAttributes': 'eyJhdHRyaWJ1dGVzIjp7IkNvdW50cnlfSVBzdGFjayI6IkJSIiwiYWNjb3VudF9pZCI6IjQzNDkyNyIsImNvdW50cnlfY29kZSI6IkJSIiwiZW1haWwiOiJuZXRvQHNwaW5vZmYuZGlnaXRhbCIsImxhbmd1YWdlIjoicHQtQlIiLCJwbGFuIjoiUHJvIiwicm9sZSI6IkFETUlOIn0sInVzZXJJZCI6IjY5NzM5OCJ9',
     '_uetsid': 'e5ef2030fce311ecb53bedaab331166c',
     '_uetvid': 'e5ef5cc0fce311ecac2e85d56bbe46fb',
-    'bm_sv': '7DB9E7168660C1D8B810C1223C65E3F4~YAAQVv4pF56Gp7CBAQAAzjWQ2hA/E1euzbOqKJjBWFHrRQvdh5n9Vbr39LLQFMSEH5/NLTMa38GK0ZL4d9RXqMN8H7Bhe5DF1R2jVoWITruBxjNjIfMbD53LgEm+PpAPCiu/BvA56AwFeUWZg1oygolF5H5X9tRXU8VI41KN0kEbrQYzQl3xidjgLFD/JZ/OzZ4P5SFio8tvvuJxJIzWbuIqScXg4Qh51QgmBq55Fr8d+CYFXhF0uZMWGAESj6EHcI6cdVnP~1',
-    'intercom-session-hq3qq4eb': 'c0xPL3RRaHhCSm5UNEVLUmZrR1ZPK25kOWN1TlFUMlRzVGl1OWNZNmo3TjY3RjdDU3MwQVh1QzJOSUtRZjZ1NS0tQ05LZ2ErS1pFUER6Wk5pWmRDZHdRUT09--234b8aa01618d72caf88a002e673bc1b534766ca',
-    '_dd_s': 'rum=0&expire=1657230253855',
+    'drift_campaign_refresh': '3a83bb17-6455-4761-8d48-b2e51098ac13',
+    'bm_sv': 'C1CBCB906BF052920F27BC6F9B5C68C4~YAAQT9PPF2b1YLOBAQAAF7u73BBSN7bkrVjpTjizurZ6Yiwsc3L/PvH5ScvVSBsO3TCnHE1Rbv7To6y8rmy1s6IYzMJNVxPn8txTMk5W5yWMPVRqvhEVno0nOlDx8mxkAllH1XmtoGpB9yKK449LXVDDhG1Bwc/Zp4XAnZ01cybbqVMLQAwzYfZXJ5DUksaOxowSxHyfcvH9wS4kXDllYAcrAmIAWliqGuPAcjw4chaQatogqzocpUXKoVqA4kIC+BSWTfX0~1',
+    'drift_eid': '697398',
+    'intercom-session-hq3qq4eb': 'dWIxTnQwblhEaGFPSUhlazdkTE01RnlTUURYc3RxV0hZeitKV1hSWElab3hweS9sWG9nYy9tMkppNWwwVmxoTC0tbDV4N0tadzd3V3lUN2x6V1duelJyQT09--2d45622c68f318f378ca58233278ce84b9e0f91e',
+    '_dd_s': 'rum=0&expire=1657266899054',
 }
 
 headers = {
@@ -95,14 +97,15 @@ headers = {
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
     # Requests sorts cookies= alphabetically
-    # 'cookie': '_gid=GA1.3.841158784.1657081595; NPS_efd9b1a6_last_seen=1657081628591; intercom-id-hq3qq4eb=e5043f4d-96ed-4f4e-b632-499a74d25eb2; drift_aid=a0fe3ffd-3efa-4b45-8109-155e76b47eb0; driftt_aid=a0fe3ffd-3efa-4b45-8109-155e76b47eb0; _hjSessionUser_863034=eyJpZCI6ImE3NDdhZTkwLTc4MjgtNTUyZS04NGFjLWM4YTM2OTIyM2M3OSIsImNyZWF0ZWQiOjE2NTcwODE2Mjc3MjYsImV4aXN0aW5nIjp0cnVlfQ==; _hjSessionUser_2716062=eyJpZCI6IjY4MzkzNTZkLWYwYzItNWZlZi04NjA5LTE0ZDYyYjlmYzA4NSIsImNyZWF0ZWQiOjE2NTcwODE1OTU3NzAsImV4aXN0aW5nIjp0cnVlfQ==; split=%7B%22xp_ab_test%22%3A%22variant%22%2C%22caterpie_activation_strategies%22%3A%22control%22%7D; ajs_group_id=434927; ajs_user_id=697398; ajs_anonymous_id=2e1316f6-da5f-4f8b-bbd3-cdf64038e530; cto_bundle=GoVtFV9MS05nTzFUYVB4NmI5NFRWaU56Vk5oVXM5WDk1SlAlMkJGNWZwJTJCT2VCN2liSW85MlVMTGg3Ym5LdzRzNFVpOFFGcHJHQXlNRSUyRnNad3hZNFJmcDhMQTZpTDgxZ1NZOFZWejRrTlZLTkpPTG5BcVJSWDh0dmZyS29yaUc2Sk5DaFFNRXJHZ3ZFYlJieEZmUkwxR09abjN2VVJxTTVsZWp0ZnByMXozaE5mWG92NzAlM0Q; __rdsid=b71963fb2d396e768b93304090f445a6; _ga=GA1.3.1486625735.1657081595; _gac_UA-17276574-1=1.1657219555.%2528not%2520set%2529; _ga_GYGJG4ZD5K=GS1.1.1657219555.4.1.1657219589.0; _hjCachedUserAttributes=eyJhdHRyaWJ1dGVzIjp7IkNvdW50cnlfSVBzdGFjayI6IkJSIiwiYWNjb3VudF9pZCI6IjQzNDkyNyIsImNvdW50cnlfY29kZSI6IkJSIiwiZW1haWwiOiJuZXRvQHNwaW5vZmYuZGlnaXRhbCIsImxhbmd1YWdlIjoicHQtQlIiLCJwbGFuIjoiUHJvIiwicm9sZSI6IkFETUlOIn0sInVzZXJJZCI6IjY5NzM5OCJ9; drift_eid=697398; ak_bmsc=10F6F829779C60943AF90FF238F6D4C0~000000000000000000000000000000~YAAQVv4pFzR+p7CBAQAAYqSP2hAw0O9X5Fq2x2AxBGV9Sq2tb8DpC1q4Cv4XflqEDg+9Pi2hBvucrkqydn0UoIng0XvvmLjnQDmGPOptUvwecCPGRg5WuM0u2LC2u1MCfQrY+CVNGsW0JzWn7sNQk5beysPmnCISRQOFq+YhZRUgUQTlV14Y0STTKP9g0Rh4Lt4nLq/rvAD/gmlNUymo0W5ztlWI1yOurtcXC9zpAtf+/gutauT37lPc1epjwaoEvhLIhZJ7SeZkyaGfJKUjUeETCsFXggDc9XyXdL6kPugYWoA2lz6/437C1RnLxKbIHbZBYu67Wpk/gRN4X5omhtK0scEjd8mkrNdUORwd0MEmc8sfhVIvZEoqhwTbF6YpiSIIGP9ro5vjhL7Ss9WLLg==; _hjIncludedInSessionSample=0; _hjSession_863034=eyJpZCI6IjQzMzE5NWI1LTY0NjQtNDYzNy04YTdjLTcyY2M4MTI3MzkxYSIsImNyZWF0ZWQiOjE2NTcyMjkyNTYzODYsImluU2FtcGxlIjpmYWxzZX0=; _hjAbsoluteSessionInProgress=0; drift_campaign_refresh=9594e6fe-d040-49d6-a0af-7f5765519f52; _uetsid=e5ef2030fce311ecb53bedaab331166c; _uetvid=e5ef5cc0fce311ecac2e85d56bbe46fb; bm_sv=7DB9E7168660C1D8B810C1223C65E3F4~YAAQVv4pF56Gp7CBAQAAzjWQ2hA/E1euzbOqKJjBWFHrRQvdh5n9Vbr39LLQFMSEH5/NLTMa38GK0ZL4d9RXqMN8H7Bhe5DF1R2jVoWITruBxjNjIfMbD53LgEm+PpAPCiu/BvA56AwFeUWZg1oygolF5H5X9tRXU8VI41KN0kEbrQYzQl3xidjgLFD/JZ/OzZ4P5SFio8tvvuJxJIzWbuIqScXg4Qh51QgmBq55Fr8d+CYFXhF0uZMWGAESj6EHcI6cdVnP~1; intercom-session-hq3qq4eb=c0xPL3RRaHhCSm5UNEVLUmZrR1ZPK25kOWN1TlFUMlRzVGl1OWNZNmo3TjY3RjdDU3MwQVh1QzJOSUtRZjZ1NS0tQ05LZ2ErS1pFUER6Wk5pWmRDZHdRUT09--234b8aa01618d72caf88a002e673bc1b534766ca; _dd_s=rum=0&expire=1657230253855',
-    'if-none-match': 'W/"1acfa22216cf0f73e1006944d94849c3"',
+    # 'cookie': '_gid=GA1.3.841158784.1657081595; NPS_efd9b1a6_last_seen=1657081628591; intercom-id-hq3qq4eb=e5043f4d-96ed-4f4e-b632-499a74d25eb2; drift_aid=a0fe3ffd-3efa-4b45-8109-155e76b47eb0; driftt_aid=a0fe3ffd-3efa-4b45-8109-155e76b47eb0; _hjSessionUser_863034=eyJpZCI6ImE3NDdhZTkwLTc4MjgtNTUyZS04NGFjLWM4YTM2OTIyM2M3OSIsImNyZWF0ZWQiOjE2NTcwODE2Mjc3MjYsImV4aXN0aW5nIjp0cnVlfQ==; _hjSessionUser_2716062=eyJpZCI6IjY4MzkzNTZkLWYwYzItNWZlZi04NjA5LTE0ZDYyYjlmYzA4NSIsImNyZWF0ZWQiOjE2NTcwODE1OTU3NzAsImV4aXN0aW5nIjp0cnVlfQ==; split=%7B%22xp_ab_test%22%3A%22variant%22%2C%22caterpie_activation_strategies%22%3A%22control%22%7D; ajs_group_id=434927; ajs_user_id=697398; ajs_anonymous_id=2e1316f6-da5f-4f8b-bbd3-cdf64038e530; cto_bundle=GoVtFV9MS05nTzFUYVB4NmI5NFRWaU56Vk5oVXM5WDk1SlAlMkJGNWZwJTJCT2VCN2liSW85MlVMTGg3Ym5LdzRzNFVpOFFGcHJHQXlNRSUyRnNad3hZNFJmcDhMQTZpTDgxZ1NZOFZWejRrTlZLTkpPTG5BcVJSWDh0dmZyS29yaUc2Sk5DaFFNRXJHZ3ZFYlJieEZmUkwxR09abjN2VVJxTTVsZWp0ZnByMXozaE5mWG92NzAlM0Q; __rdsid=dbd63b9d3653e6d749a8d0342788ec9b; ak_bmsc=9879A6F65AF2BF88FDF2EE932C34DC60~000000000000000000000000000000~YAAQT9PPFzjyYLOBAQAA1jK73BCBgxMGSDePWE4bdgAeFP8aDWEh7EzdtjOcm1XO7MFXNI77OZQ44o+Of92muQ5zZ0ZSC6Zh8zA4lR8O7GJ/TyFqmre1USae3YwEqO2o/ahn9WH8Nvw6xOiGnogDw/4/i3pv/qYXwTXqDN9CdLfrVjY9Kz+UBVZ41SuV2YgyeuBI0Rt3eA8p7kFToM54EGPfsijd7Bk3WbZeiLz9mFX5PpUhe1/eTqzN94sSnu8MHVicHtF9Luyx/pL3M5WM50xZxnVHMest/FH1Y6GYuikG7n1djgetR5690LaXAz66FTLGTlThdKbtteKoqbHKH9JBz2yqNEM3DmvafHMII2XAQBNv2Z7CVdaBpfRSxkjbhBS1CKpGKl4H4AqrBgSIPw==; _hjSession_2716062=eyJpZCI6ImQ2NjIzYmZmLWMzZDUtNDdiNi1iOWNlLTE3NGZjNTk5NzM2MiIsImNyZWF0ZWQiOjE2NTcyNjU2NjU0MzksImluU2FtcGxlIjp0cnVlfQ==; _hjAbsoluteSessionInProgress=0; _gac_UA-17276574-1=1.1657265666.%2528not%2520set%2529; _ga=GA1.1.1486625735.1657081595; _ga_GYGJG4ZD5K=GS1.1.1657265665.5.1.1657265697.0; _hjIncludedInSessionSample=1; _hjSession_863034=eyJpZCI6IjJlNTMyNzcyLWM4MTctNDBiNC1hNmYxLTVmNDIyOGQzZmM4NyIsImNyZWF0ZWQiOjE2NTcyNjU2OTkyMjMsImluU2FtcGxlIjp0cnVlfQ==; _hjIncludedInPageviewSample=1; _hjCachedUserAttributes=eyJhdHRyaWJ1dGVzIjp7IkNvdW50cnlfSVBzdGFjayI6IkJSIiwiYWNjb3VudF9pZCI6IjQzNDkyNyIsImNvdW50cnlfY29kZSI6IkJSIiwiZW1haWwiOiJuZXRvQHNwaW5vZmYuZGlnaXRhbCIsImxhbmd1YWdlIjoicHQtQlIiLCJwbGFuIjoiUHJvIiwicm9sZSI6IkFETUlOIn0sInVzZXJJZCI6IjY5NzM5OCJ9; _uetsid=e5ef2030fce311ecb53bedaab331166c; _uetvid=e5ef5cc0fce311ecac2e85d56bbe46fb; drift_campaign_refresh=3a83bb17-6455-4761-8d48-b2e51098ac13; bm_sv=C1CBCB906BF052920F27BC6F9B5C68C4~YAAQT9PPF2b1YLOBAQAAF7u73BBSN7bkrVjpTjizurZ6Yiwsc3L/PvH5ScvVSBsO3TCnHE1Rbv7To6y8rmy1s6IYzMJNVxPn8txTMk5W5yWMPVRqvhEVno0nOlDx8mxkAllH1XmtoGpB9yKK449LXVDDhG1Bwc/Zp4XAnZ01cybbqVMLQAwzYfZXJ5DUksaOxowSxHyfcvH9wS4kXDllYAcrAmIAWliqGuPAcjw4chaQatogqzocpUXKoVqA4kIC+BSWTfX0~1; drift_eid=697398; intercom-session-hq3qq4eb=dWIxTnQwblhEaGFPSUhlazdkTE01RnlTUURYc3RxV0hZeitKV1hSWElab3hweS9sWG9nYy9tMkppNWwwVmxoTC0tbDV4N0tadzd3V3lUN2x6V1duelJyQT09--2d45622c68f318f378ca58233278ce84b9e0f91e; _dd_s=rum=0&expire=1657266899054',
+    'if-none-match': 'W/"91f2e3765aa2e3b07ac1d2c2826e1d1c"',
+    'referer': 'https://accounts.rdstation.com.br/?affiliate_id=%28not%20set%29&email_signup_account=false&exist_account=false&gclid=%28not%20set%29&lmdsid=%28not%20set%29&locale=pt-BR&redirect_to=https%3A%2F%2Fapp.rdstation.com.br%2Fauth%2Fcallback&referrer=%28not%20set%29&show_signup_account=false&signup_final_step=false&trial_origin=%28not%20set%29&utm_campaign=%28not%20set%29&utm_medium=%28not%20set%29&utm_source=%28not%20set%29&utm_term=%28not%20set%29&xtra=%28not%20set%29',
     'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
     'sec-ch-ua-mobile': '?0',
     'sec-ch-ua-platform': '"macOS"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
+    'sec-fetch-site': 'same-site',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
@@ -160,8 +163,8 @@ instaBR_mil = str(profile.followers)[:2]
 instaBR_dec = str(profile.followers)[2]
 instagram_count = instaBR_mil + "." + instaBR_dec + "K"
 
-instaLT_mil = str(profile2.followers)[:1]
-instaLT_dec = str(profile2.followers)[1]
+instaLT_mil = str(profile2.followers)[:2]
+instaLT_dec = str(profile2.followers)[2]
 instagram_countL = instaLT_mil + "." + instaLT_dec + "K"
 
 #LATAM 
