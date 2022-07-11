@@ -21098,3 +21098,250 @@ DevTools listening on ws://localhost:56454/devtools/browser/3a90320b-7506-40f7-a
 [2022-07-08T14:19:24Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
 [2022-07-08T14:19:24Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
 1657289982852	Marionette	INFO	Stopped listening on port 56461
+1657310904314	geckodriver	INFO	Listening on 127.0.0.1:63218
+1657310904823	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "63219" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/h_/d7c3njw54qlbr4n97vs3xfr80000gn/T/rust_mozprofileZCeDWt"
+*** You are running in headless mode.
+2022-07-08 17:08:25.201 plugin-container[81387:18544828] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 17:08:25.201 plugin-container[81387:18544828] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-08 17:08:25.206 plugin-container[81387:18544828] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 17:08:25.206 plugin-container[81387:18544828] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-08 17:08:25.206 plugin-container[81387:18544833] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 17:08:25.207 plugin-container[81387:18544833] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1657310905210	Marionette	INFO	Marionette enabled
+1657310905235	Marionette	INFO	Listening on port 63227
+WebDriver BiDi listening on ws://localhost:63219
+Read port: 63227
+1657310905527	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/h_/d7c3njw54qlbr4n97vs3xfr80000gn/T/rust_mozprofileZCeDWt/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63219/devtools/browser/e8ead0cb-6864-4206-9d17-53d2fd2cd8e8
+1657310908852	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-08T20:08:28Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T20:08:28Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T20:08:29Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T20:08:29Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+2022-07-08 20:08:29.126 plugin-container[81653:18545628] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 20:08:29.126 plugin-container[81653:18545628] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-08 20:08:29.129 plugin-container[81653:18545628] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 20:08:29.129 plugin-container[81653:18545628] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-08 20:08:29.129 plugin-container[81653:18545633] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 20:08:29.129 plugin-container[81653:18545633] nil host used in call to allowsAnyHTTPSCertificateForHost:
+[2022-07-08T20:08:30Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T20:08:30Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T20:08:30Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T20:08:30Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.15f9a6d8.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1657310924240	Marionette	INFO	Stopped listening on port 63227
+1657311290921	geckodriver	INFO	Listening on 127.0.0.1:63801
+1657311291434	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "63802" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/h_/d7c3njw54qlbr4n97vs3xfr80000gn/T/rust_mozprofileWUUY7J"
+*** You are running in headless mode.
+2022-07-08 17:14:51.804 plugin-container[4771:18598842] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 17:14:51.805 plugin-container[4771:18598842] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-08 17:14:51.808 plugin-container[4771:18598842] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 17:14:51.808 plugin-container[4771:18598842] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-08 17:14:51.808 plugin-container[4771:18598849] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 17:14:51.808 plugin-container[4771:18598849] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1657311291822	Marionette	INFO	Marionette enabled
+1657311291872	Marionette	INFO	Listening on port 63813
+WebDriver BiDi listening on ws://localhost:63802
+Read port: 63813
+1657311292077	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/h_/d7c3njw54qlbr4n97vs3xfr80000gn/T/rust_mozprofileWUUY7J/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63802/devtools/browser/9fbc0b5f-010d-4aaa-a983-40622cb569b5
+1657311295970	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-08T20:14:56Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T20:14:56Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T20:14:56Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+2022-07-08 20:14:56.238 plugin-container[5002:18599610] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 20:14:56.239 plugin-container[5002:18599610] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-08 20:14:56.242 plugin-container[5002:18599610] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 20:14:56.242 plugin-container[5002:18599610] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-08 20:14:56.242 plugin-container[5002:18599618] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 20:14:56.242 plugin-container[5002:18599618] nil host used in call to allowsAnyHTTPSCertificateForHost:
+[2022-07-08T20:14:56Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T20:14:58Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T20:14:58Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T20:14:58Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T20:14:58Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.15f9a6d8.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1657311310110	Marionette	INFO	Stopped listening on port 63813
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1657323880752	geckodriver	INFO	Listening on 127.0.0.1:51241
+1657323881198	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "51242" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/h_/d7c3njw54qlbr4n97vs3xfr80000gn/T/rust_mozprofileMqvgXP"
+*** You are running in headless mode.
+1657323883686	Marionette	INFO	Marionette enabled
+2022-07-08 20:44:43.714 plugin-container[48035:1059579] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 20:44:43.714 plugin-container[48035:1059579] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1657323883745	Marionette	INFO	Listening on port 51250
+WebDriver BiDi listening on ws://localhost:51242
+2022-07-08 20:44:43.791 plugin-container[48035:1059579] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 20:44:43.791 plugin-container[48035:1059579] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-08 20:44:43.792 plugin-container[48035:1059621] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 20:44:43.792 plugin-container[48035:1059621] nil host used in call to allowsAnyHTTPSCertificateForHost:
+Read port: 51250
+1657323883950	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/h_/d7c3njw54qlbr4n97vs3xfr80000gn/T/rust_mozprofileMqvgXP/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51242/devtools/browser/3ee61396-4648-4981-a16b-cb734e39ff1e
+1657323888365	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-08T23:44:48Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T23:44:48Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T23:44:48Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T23:44:48Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+2022-07-08 23:44:48.697 plugin-container[48326:1060503] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 23:44:48.697 plugin-container[48326:1060503] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-08 23:44:48.699 plugin-container[48326:1060503] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 23:44:48.699 plugin-container[48326:1060503] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-08 23:44:48.700 plugin-container[48326:1060504] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-08 23:44:48.700 plugin-container[48326:1060504] nil host used in call to allowsAnyHTTPSCertificateForHost:
+[2022-07-08T23:44:50Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T23:44:50Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T23:44:50Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-08T23:44:50Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.15f9a6d8.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1657323904561	Marionette	INFO	Stopped listening on port 51250
+1657357420027	geckodriver	INFO	Listening on 127.0.0.1:55725
+1657357420530	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "55726" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/h_/d7c3njw54qlbr4n97vs3xfr80000gn/T/rust_mozprofilenMhfuM"
+*** You are running in headless mode.
+2022-07-09 06:03:40.996 plugin-container[61585:5460362] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-09 06:03:40.996 plugin-container[61585:5460362] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1657357421030	Marionette	INFO	Marionette enabled
+2022-07-09 06:03:41.077 plugin-container[61585:5460362] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-09 06:03:41.077 plugin-container[61585:5460362] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-09 06:03:41.077 plugin-container[61585:5460404] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-09 06:03:41.077 plugin-container[61585:5460404] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1657357421080	Marionette	INFO	Listening on port 55733
+WebDriver BiDi listening on ws://localhost:55726
+Read port: 55733
+1657357421286	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/h_/d7c3njw54qlbr4n97vs3xfr80000gn/T/rust_mozprofilenMhfuM/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55726/devtools/browser/22f5975d-8cf9-4f43-a282-5ccf96fb592d
+1657357425583	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-09T09:03:45Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-09T09:03:45Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-09T09:03:45Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-09T09:03:45Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+2022-07-09 09:03:45.891 plugin-container[61901:5461375] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-09 09:03:45.891 plugin-container[61901:5461375] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-09 09:03:45.893 plugin-container[61901:5461375] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-09 09:03:45.893 plugin-container[61901:5461375] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-09 09:03:45.893 plugin-container[61901:5461377] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-09 09:03:45.893 plugin-container[61901:5461377] nil host used in call to allowsAnyHTTPSCertificateForHost:
+[2022-07-09T09:03:47Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-09T09:03:47Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-09T09:03:47Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-09T09:03:47Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.15f9a6d8.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1657357442249	Marionette	INFO	Stopped listening on port 55733
+1657357557108	geckodriver	INFO	Listening on 127.0.0.1:56215
+1657357557622	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "56216" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/h_/d7c3njw54qlbr4n97vs3xfr80000gn/T/rust_mozprofile8ygceO"
+*** You are running in headless mode.
+2022-07-09 06:05:58.015 plugin-container[69770:5480681] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-09 06:05:58.016 plugin-container[69770:5480681] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-09 06:05:58.023 plugin-container[69770:5480681] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-09 06:05:58.023 plugin-container[69770:5480681] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-09 06:05:58.023 plugin-container[69770:5480689] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-09 06:05:58.023 plugin-container[69770:5480689] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1657357558031	Marionette	INFO	Marionette enabled
+1657357558049	Marionette	INFO	Listening on port 56227
+WebDriver BiDi listening on ws://localhost:56216
+Read port: 56227
+1657357558275	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/h_/d7c3njw54qlbr4n97vs3xfr80000gn/T/rust_mozprofile8ygceO/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56216/devtools/browser/d38a5ab9-cdf2-4475-9b79-f7f7a1b66ca1
+1657357561859	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-09T09:06:01Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-09T09:06:01Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-09T09:06:01Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-09T09:06:01Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+2022-07-09 09:06:02.078 plugin-container[70060:5481622] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-09 09:06:02.078 plugin-container[70060:5481622] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-09 09:06:02.081 plugin-container[70060:5481622] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-09 09:06:02.081 plugin-container[70060:5481622] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-09 09:06:02.081 plugin-container[70060:5481617] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-09 09:06:02.081 plugin-container[70060:5481617] nil host used in call to allowsAnyHTTPSCertificateForHost:
+[2022-07-09T09:06:03Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-09T09:06:03Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-09T09:06:03Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-09T09:06:03Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.15f9a6d8.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1657357576335	Marionette	INFO	Stopped listening on port 56227
+1657484025734	geckodriver	INFO	Listening on 127.0.0.1:52914
+1657484026245	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "52915" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/h_/d7c3njw54qlbr4n97vs3xfr80000gn/T/rust_mozprofileYsKx0G"
+*** You are running in headless mode.
+2022-07-10 17:13:46.590 plugin-container[29029:21240819] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-10 17:13:46.590 plugin-container[29029:21240819] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1657484026613	Marionette	INFO	Marionette enabled
+2022-07-10 17:13:46.615 plugin-container[29029:21240819] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-10 17:13:46.615 plugin-container[29029:21240819] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-10 17:13:46.615 plugin-container[29029:21240823] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-10 17:13:46.615 plugin-container[29029:21240823] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1657484026639	Marionette	INFO	Listening on port 52926
+WebDriver BiDi listening on ws://localhost:52915
+Read port: 52926
+1657484026864	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/h_/d7c3njw54qlbr4n97vs3xfr80000gn/T/rust_mozprofileYsKx0G/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52915/devtools/browser/c87bbe34-f263-498e-92cd-350e70657c10
+1657484030808	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-10T20:13:50Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-10T20:13:50Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-10T20:13:50Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-10T20:13:50Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+2022-07-10 20:13:51.063 plugin-container[29304:21241667] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-10 20:13:51.063 plugin-container[29304:21241667] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-10 20:13:51.065 plugin-container[29304:21241667] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-10 20:13:51.065 plugin-container[29304:21241667] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-10 20:13:51.066 plugin-container[29304:21241683] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-10 20:13:51.066 plugin-container[29304:21241683] nil host used in call to allowsAnyHTTPSCertificateForHost:
+[2022-07-10T20:13:52Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-10T20:13:52Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-10T20:13:52Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-10T20:13:52Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.15f9a6d8.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1657484047100	Marionette	INFO	Stopped listening on port 52926
+1657512632003	geckodriver	INFO	Listening on 127.0.0.1:51190
+1657512632508	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "51191" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/h_/d7c3njw54qlbr4n97vs3xfr80000gn/T/rust_mozprofileOt63re"
+*** You are running in headless mode.
+2022-07-11 01:10:33.126 plugin-container[475:25115536] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-11 01:10:33.126 plugin-container[475:25115536] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1657512633160	Marionette	INFO	Marionette enabled
+2022-07-11 01:10:33.207 plugin-container[475:25115536] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-11 01:10:33.207 plugin-container[475:25115536] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-11 01:10:33.207 plugin-container[475:25115576] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-11 01:10:33.208 plugin-container[475:25115576] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1657512633209	Marionette	INFO	Listening on port 51202
+WebDriver BiDi listening on ws://localhost:51191
+Read port: 51202
+1657512633394	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/h_/d7c3njw54qlbr4n97vs3xfr80000gn/T/rust_mozprofileOt63re/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51191/devtools/browser/20d156f3-b81c-4de3-a1d7-7ea1f6be6b7a
+1657512641698	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-07-11T04:10:41Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-11T04:10:41Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-11T04:10:41Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-11T04:10:41Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+2022-07-11 04:10:42.071 plugin-container[1207:25117069] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-11 04:10:42.071 plugin-container[1207:25117069] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-11 04:10:42.073 plugin-container[1207:25117069] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-11 04:10:42.073 plugin-container[1207:25117069] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-11 04:10:42.073 plugin-container[1207:25117074] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-11 04:10:42.073 plugin-container[1207:25117074] nil host used in call to allowsAnyHTTPSCertificateForHost:
+[2022-07-11T04:10:44Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-11T04:10:44Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-11T04:10:44Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-07-11T04:10:44Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.15f9a6d8.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1657512659517	Marionette	INFO	Stopped listening on port 51202
