@@ -146,11 +146,7 @@ with sync_playwright() as p:
             email_number = emailNoSpape.split('.')[0]
             email_decimal = (email_info.split('.')[1])[0]
             email_count = email_number + "." + email_decimal + "K"
-            print (email_count)
-
-
-
-
+            
 #YouTube
 driver.get('https://www.youtube.com/c/SnapdragonBrasil')
 youtube_count = driver.find_element(By.ID,'subscriber-count').text.split(' ')[0]
