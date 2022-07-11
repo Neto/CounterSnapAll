@@ -46,3 +46,4 @@ def home():
 
   # Pass the list of objects to the template for rendering
   return render_template('stats.html', records=records)
+  

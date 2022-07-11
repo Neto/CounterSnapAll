@@ -42,20 +42,22 @@ grapf1 = pd.DataFrame.from_dict(records)
 plt.plot(grapf1.date,grapf1.total)
 plt.title("Snapdragon Followers Growth - Brazil and Latam")
 ax = plt.gca()
-every_nth = 4
+every_nth = 5
 for n, label in enumerate(ax.yaxis.get_ticklabels()):
     if n % every_nth != 0:
         label.set_visible(False)
-every_nth2 = 3
+every_nth2 = 5
 for n, label in enumerate(ax.xaxis.get_ticklabels()):
     if n % every_nth2 != 0:
         label.set_visible(False)
 
 ax.invert_xaxis()
 ax.invert_yaxis()
-ax.set_facecolor('black')
+ax.set_facecolor('white')
 
-plt.show()
+plt.savefig('/Library/WebServer/Documents/Spinoff/graphic.png')
+
+#plt.show()
 
 
 
