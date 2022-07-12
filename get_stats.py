@@ -15,8 +15,7 @@ import numpy as np
 import pandas as pd
 
 
-
-
+# DEF TO APPEND CURRENT NUMBERS TO 'followers.db'
 def save_data(emailC, youtube, youtubeL, twitter, instagram, twitterL, instagramL, total):
 
   # Prepare data for saving
@@ -51,17 +50,18 @@ def save_data(emailC, youtube, youtubeL, twitter, instagram, twitterL, instagram
   con.commit()
   con.close()
 
+
 # BROWSER AUTOMATION
 
-# Setup webdriver
+# SETUP GECKODRIVER WEBDRIVER TO USE WITH SELENIUM AND FIREFOX HEADLESS
 options = Options()
 options.add_argument('--headless')
 s = Service('/Users/neto/ARDUINO/CounterSnapAll/geckodriver')
 driver = webdriver.Firefox(service=s, options=options)
 driver.implicitly_wait(10)
 
-#BRASIL
-
+# SCRAP EMAIL COUNT ON RD STATION (BRAZIL/LATAM CRM PLATFORM)
+# NOTE: ALL SCRAPED STRINGS MUST BE CONVERTED TO THE FORMAT "XX.XX K"
 with sync_playwright() as p:
     browser = p.chromium.launch(headless = True, slow_mo=50)
     page = browser.new_page()
@@ -82,51 +82,44 @@ with sync_playwright() as p:
             email_decimal = (email_info.split('.')[1])[0]
             email_count = email_number + "." + email_decimal + "K"
             
-#YouTube
+# SCRAPE YouTube BRAZIL FOLLOWERS
 driver.get('https://www.youtube.com/c/SnapdragonBrasil')
 youtube_count = driver.find_element(By.ID,'subscriber-count').text.split(' ')[0]
 youtube_mil = youtube_count.split('.')[0]
 youtube_dec = (youtube_count.split('.')[1])[0]
 youtube_count = youtube_mil + "." + youtube_dec + "K"
 
-#YouTubeL
+# SCRAPE YouTube LATAM FOLLOWERS
 driver.get('https://www.youtube.com/c/SnapdragonLatam')
 youtube_countL = driver.find_element(By.ID,'subscriber-count').text.split(' ')[0]
 youtube_milL = youtube_countL.split('.')[0]
 youtube_decL = (youtube_countL.split('.')[1])[0]
 youtube_countL = youtube_milL + "." + youtube_decL + "K"
 
-# Get Twitter followers
+# SCRAPE Twitter BRAZIL FOLLOWERS - SELENIUM PYTHON LIBRARY + GECKODRIVER
 driver.get('https://twitter.com/snapdragon_BRA')
 twitter_count = driver.find_element(By.CSS_SELECTOR,'a[href="/snapdragon_BRA/followers"] > span > span').text
 
-# Get Instagram followers BR e LATAM at the same time to avoid Instagram block
+# SCRAPE Twitter LATAM FOLLOWERS - SELENIUM PYTHON LIBRARY + GECKODRIVER
+driver.get('https://twitter.com/snapdragon_LAT')
+twitter_countL = driver.find_element(By.CSS_SELECTOR,'a[href="/snapdragon_LAT/followers"] > span > span').text
 
+# SCRAPE Instagram BRAZIL AND LATIM FOLLOWERS - INSTALOADER PYTHON LIBRARY
 L = instaloader.Instaloader()
-#user = "neto_netohouse"
-#password = "061231NetoHouse"
-#L.login(user, password)
 profile = instaloader.Profile.from_username(L.context, "snapdragon_brasil")
 profile2 = instaloader.Profile.from_username(L.context, "snapdragon_latam")
-
 instaBR_mil = str(profile.followers)[:2]
 instaBR_dec = str(profile.followers)[2]
 instagram_count = instaBR_mil + "." + instaBR_dec + "K"
-
 instaLT_mil = str(profile2.followers)[:2]
 instaLT_dec = str(profile2.followers)[2]
 instagram_countL = instaLT_mil + "." + instaLT_dec + "K"
 
-#LATAM 
-
-# Get Twitter followers LATAM
-driver.get('https://twitter.com/snapdragon_LAT')
-twitter_countL = driver.find_element(By.CSS_SELECTOR,'a[href="/snapdragon_LAT/followers"] > span > span').text
-
-# Close webdriver
+# CLOSE GECKODRIVER WEBDRIVER - MAKE SURE TO SLEEP 5 TO CLOSE ALL INSTANCES OF FIREFOX
 sleep(5)
 driver.close()
 
+# PARSE ALL CONVERTES XX.XX K STRINGS TO FLOATS TO CALCULATE TOTAL FOLLOWERS, THEN CONVERT BACK TO STRING
 emailNumber = float(email_count.split('K')[0])
 youtubeBrNumber = float(youtube_count.split('K')[0])
 youtubeLNumber = float(youtube_countL.split('K')[0])
@@ -144,21 +137,21 @@ totalFF = emailNumber + youtubeBrNumber + (youtubeLNumber/1000) + instaBrNumber 
 totalFF = round(totalFF,1)
 totalFFS = str(totalFF) + "K"
 
-# Save the data
+# CALL DEF TO SAVE DATA ON FOLLOWERS.DB FILE
 save_data(email_count, youtube_count, youtube_countL, twitter_count, instagram_count, twitter_countL, instagram_countL, totalFFS)
 
-
-#SAVE GRAPHIC
+# SAVE GRAPHIC
+# CONNECT TO FOLLOWERS.DB
 con = sqlite3.connect('followers.db')
 cur = con.cursor()
 
-  # Create an empty list for the records
+# CREATE EMPTY LIST TO IMPORT FLOATS INSTEAD OF STRINGS
 records = []
 
-    # Get all records
+# GET ALL RECORDS
 all_stats = cur.execute('SELECT * FROM monthly_stats ORDER BY date DESC').fetchall()
 
-    # Create an object ("dictionary" in Python) for each record
+# APPEND RECORDS IN FLOAT FORMAT
 for item in all_stats:
     dt = datetime.fromtimestamp(item[0])
     record = {
@@ -175,11 +168,10 @@ for item in all_stats:
 
     records.append(record)
 
+# CREATE PANDAS DATAFRAME
 grapf1 = pd.DataFrame.from_dict(records)
 
-
-
-
+# PLOT DATAFRAME ON GRAPHIC
 plt.plot(grapf1.date,grapf1.total)
 plt.title("Snapdragon Followers Growth - Brazil and Latam")
 ax = plt.gca()
@@ -196,4 +188,5 @@ ax.invert_xaxis()
 ax.invert_yaxis()
 ax.set_facecolor('white')
 
+# SAVE GRAPHIC IMAGE
 plt.savefig('/Library/WebServer/Documents/Spinoff/graphic.png')
