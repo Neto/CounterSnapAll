@@ -12,7 +12,7 @@ Automatically collect these data:
 
 Is the main app that takes care of the flask instance that publishes the webpage (.htm on /templates ; .css on /static)
 The favicon and the graphic must be hosted outside the .venv enviroment.
-I use tmux to keep flask hosting the page even after closing the terminal.
+Tmux was used to keep flask hosting the page even after closing the terminal.
 
     get_stats.py
 
