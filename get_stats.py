@@ -119,6 +119,8 @@ instagram_countL = instaLT_mil + "." + instaLT_dec + "K"
 sleep(5)
 driver.close()
 
+# CREATE GRAPHIC
+
 # PARSE ALL CONVERTES XX.XX K STRINGS TO FLOATS TO CALCULATE TOTAL FOLLOWERS, THEN CONVERT BACK TO STRING
 emailNumber = float(email_count.split('K')[0])
 youtubeBrNumber = float(youtube_count.split('K')[0])
