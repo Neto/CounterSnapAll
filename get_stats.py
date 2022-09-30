@@ -1,3 +1,4 @@
+from genericpath import exists
 from time import sleep
 from tokenize import String
 from selenium import webdriver
@@ -7,6 +8,7 @@ from selenium.webdriver.firefox.service import Service
 from datetime import date, datetime
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
+from urllib.request import urlopen as uReq
 from turtle import clear
 import sqlite3
 import instaloader
@@ -69,32 +71,38 @@ with sync_playwright() as p:
     page.fill('input#email','neto@spinoff.digital')
     page.fill('input#password','061231(RDStation)')
     page.click('button[type=submit]')
-    page.is_visible('div.leads_crm')
-    html = page.inner_html('#content')
+    page.is_visible('div.slats-heading')
+    html = page.inner_html('span.btn-height-sm')
     soup = BeautifulSoup(html,'html.parser')   
-    infos_selector = soup.find_all('div', class_='col-xs-5')
-    for info_selector in infos_selector:
-        right_div = info_selector.find('span', class_='btn-height-sm')
-        if right_div:
-            email_info = right_div.get_text()
-            emailNoSpape = email_info.split('\n          ')[1]
-            email_number = emailNoSpape.split('.')[0]
-            email_decimal = (email_info.split('.')[1])[0]
-            email_count = email_number + "." + email_decimal + "K"
-            
+    email_info = soup.get_text()
+    email_number = email_info.split('.')[0] #99
+    email_decimal1 = (email_info.split('.')[1]).split(' ')[0]  
+    email_decimal = email_decimal1[0]
+    email_count = email_number + "." + email_decimal + "K"
+           
 # SCRAPE YouTube BRAZIL FOLLOWERS
 driver.get('https://www.youtube.com/c/SnapdragonBrasil')
 youtube_count = driver.find_element(By.ID,'subscriber-count').text.split(' ')[0]
 youtube_mil = youtube_count.split('.')[0]
-youtube_dec = (youtube_count.split('.')[1])[0]
-youtube_count = youtube_mil + "." + youtube_dec + "K"
 
-# SCRAPE YouTube LATAM FOLLOWERS
+try:
+    youtube_dec = (youtube_count.split('.')[1])[0]
+except IndexError:
+    youtube_count = youtube_mil
+else:
+    youtube_count = youtube_mil + "." + youtube_dec + "K"
+
+
+## SCRAPE YouTube LATAM FOLLOWERS
 driver.get('https://www.youtube.com/c/SnapdragonLatam')
 youtube_countL = driver.find_element(By.ID,'subscriber-count').text.split(' ')[0]
 youtube_milL = youtube_countL.split('.')[0]
-youtube_decL = (youtube_countL.split('.')[1])[0]
-youtube_countL = youtube_milL + "." + youtube_decL + "K"
+try:
+    youtube_decL = (youtube_countL.split('.')[1])[0]
+except IndexError:
+    youtube_countL = youtube_milL
+else:
+    youtube_countL = youtube_milL + "." + youtube_decL + "K"
 
 # SCRAPE Twitter BRAZIL FOLLOWERS - SELENIUM PYTHON LIBRARY + GECKODRIVER
 driver.get('https://twitter.com/snapdragon_BRA')
@@ -106,9 +114,10 @@ twitter_countL = driver.find_element(By.CSS_SELECTOR,'a[href="/snapdragon_LAT/fo
 
 # SCRAPE Instagram BRAZIL AND LATIM FOLLOWERS - INSTALOADER PYTHON LIBRARY
 L = instaloader.Instaloader()
+L.login(user="neto_netohouse",passwd="061231NetoHouse")
 profile = instaloader.Profile.from_username(L.context, "snapdragon_brasil")
 profile2 = instaloader.Profile.from_username(L.context, "snapdragon_latam")
-instaBR_mil = str(profile.followers)[:2]
+instaBR_mil = str(profile.followers)[:3]
 instaBR_dec = str(profile.followers)[2]
 instagram_count = instaBR_mil + "." + instaBR_dec + "K"
 instaLT_mil = str(profile2.followers)[:2]
@@ -123,19 +132,18 @@ driver.close()
 
 # PARSE ALL CONVERTES XX.XX K STRINGS TO FLOATS TO CALCULATE TOTAL FOLLOWERS, THEN CONVERT BACK TO STRING
 emailNumber = float(email_count.split('K')[0])
+email_count = str(emailNumber) + "K"
 youtubeBrNumber = float(youtube_count.split('K')[0])
 youtubeLNumber = float(youtube_countL.split('K')[0])
-
 twitterBrNumber = float(twitter_count.split('K')[0])
 twitterLtNumber = float(twitter_countL.split('K')[0]) 
-
 instaBrNumber = float(instagram_count.split('K')[0])
 instagram_count = str(instaBrNumber) + "K"
-
 instaLtNumber = float(instagram_countL.split('K')[0])
 instagram_countL = str(instaLtNumber) + "K"
 
-totalFF = emailNumber + youtubeBrNumber + (youtubeLNumber/1000) + instaBrNumber + twitterBrNumber + instaLtNumber + twitterLtNumber
+totalFF = emailNumber + youtubeBrNumber + youtubeLNumber + instaBrNumber + twitterBrNumber + instaLtNumber + twitterLtNumber
+
 totalFF = round(totalFF,1)
 totalFFS = str(totalFF) + "K"
 
@@ -327,6 +335,5 @@ ax.invert_xaxis()
 ax.invert_yaxis()
 ax.set_facecolor('white')
 plt.savefig('/Library/WebServer/Documents/Spinoff/graphicT.png')
-
 
 #plt.show()
