@@ -67,7 +67,7 @@ driver.implicitly_wait(10)
 with sync_playwright() as p:
     browser = p.chromium.launch(headless = True, slow_mo=50)
     page = browser.new_page()
-    page.goto('https://app.rdstation.com.br/leads?segmentation_list=6496060')
+    page.goto('https://app.rdstation.com.br/leads?utf8=%E2%9C%93&query=&segmentation_list=7174454')
     page.fill('input#email','neto@spinoff.digital')
     page.fill('input#password','061231(RDStation)')
     page.click('button[type=submit]')
