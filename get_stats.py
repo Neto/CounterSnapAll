@@ -114,7 +114,7 @@ twitter_countL = driver.find_element(By.CSS_SELECTOR,'a[href="/snapdragon_LAT/fo
 
 # SCRAPE Instagram BRAZIL AND LATIM FOLLOWERS - INSTALOADER PYTHON LIBRARY
 L = instaloader.Instaloader()
-L.login(user="neto_netohouse",passwd="061231NetoHouse")
+#L.login(user="neto_netohouse",passwd="061231(Counter)")
 profile = instaloader.Profile.from_username(L.context, "snapdragon_brasil")
 profile2 = instaloader.Profile.from_username(L.context, "snapdragon_latam")
 instaBR_mil = str(profile.followers)[:3]
@@ -205,7 +205,7 @@ for n, label in enumerate(ax.xaxis.get_ticklabels()):
 ax.invert_xaxis()
 ax.invert_yaxis()
 ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/Spinoff/graphicEm.png')
+plt.savefig('/Library/WebServer/Documents/graphicEm.png')
 
 # YOUTUBE BR
 plt.clf()
@@ -223,7 +223,7 @@ for n, label in enumerate(ax.xaxis.get_ticklabels()):
 ax.invert_xaxis()
 ax.invert_yaxis()
 ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/Spinoff/graphicYB.png')
+plt.savefig('/Library/WebServer/Documents/graphicYB.png')
 
 # YOUTUBE LT
 plt.clf()
@@ -241,7 +241,7 @@ for n, label in enumerate(ax.xaxis.get_ticklabels()):
 ax.invert_xaxis()
 ax.invert_yaxis()
 ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/Spinoff/graphicYL.png')
+plt.savefig('/Library/WebServer/Documents/graphicYL.png')
 
 
 
@@ -261,7 +261,7 @@ for n, label in enumerate(ax.xaxis.get_ticklabels()):
 ax.invert_xaxis()
 ax.invert_yaxis()
 ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/Spinoff/graphicTB.png')
+plt.savefig('/Library/WebServer/Documents/graphicTB.png')
 
 # EMAIL
 plt.clf()
@@ -279,7 +279,7 @@ for n, label in enumerate(ax.xaxis.get_ticklabels()):
 ax.invert_xaxis()
 ax.invert_yaxis()
 ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/Spinoff/graphicTL.png')
+plt.savefig('/Library/WebServer/Documents/graphicTL.png')
 
 # INSTAGRAM BR
 plt.clf()
@@ -297,7 +297,7 @@ for n, label in enumerate(ax.xaxis.get_ticklabels()):
 ax.invert_xaxis()
 ax.invert_yaxis()
 ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/Spinoff/graphicIB.png')
+plt.savefig('/Library/WebServer/Documents/graphicIB.png')
 
 # INSTAGRAM LT
 plt.clf()
@@ -315,7 +315,7 @@ for n, label in enumerate(ax.xaxis.get_ticklabels()):
 ax.invert_xaxis()
 ax.invert_yaxis()
 ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/Spinoff/graphicIL.png')
+plt.savefig('/Library/WebServer/Documents/graphicIL.png')
 
 
 # TOTAL
@@ -334,6 +334,6 @@ for n, label in enumerate(ax.xaxis.get_ticklabels()):
 ax.invert_xaxis()
 ax.invert_yaxis()
 ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/Spinoff/graphicT.png')
+plt.savefig('/Library/WebServer/Documents/graphicT.png')
 
 #plt.show()
