@@ -30,7 +30,7 @@ def home():
         print("Intervalo de Horas : ", dateDiff)
         
         #Hours to Goal Date
-        timeMeta = "2022-09-30 23:59:59"
+        timeMeta = "2022-12-31 23:59:59"
         timeMetaTS = datetime.strptime(timeMeta, "%Y-%m-%d %H:%M:%S").timestamp()
         timeFinal = datetime.fromtimestamp(timeMetaTS)
 
