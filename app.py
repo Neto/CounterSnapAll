@@ -4,11 +4,13 @@ import sqlite3
 
 app = Flask(__name__)
 
+app.config.from_object(__name__)
+
 @app.route('/')
 def home():
 
   # Connect to the database
-  con = sqlite3.connect('followers.db')
+  con = sqlite3.connect('/Users/neto/ARDUINO/CounterSnapAll/followers.db')
   cur = con.cursor()
 
   # Create an empty list for the records
@@ -32,7 +34,9 @@ def home():
         'instagram': item[5],
         'twitterL': item[6],
         'instagramL': item[7],
-        'total': item[8]
+        'tiktokB': item[8],
+        'tiktokL': item[9],
+        'total': item[10]
       }
       
       # Add each record object to the list
