@@ -14,11 +14,11 @@ app = Flask(__name__)
 def home():
     try:
 # Connect to the database
-        con = sqlite3.connect('followers.db')
+        con = sqlite3.connect('/Users/neto/ARDUINO/CounterSnapAll/followers.db')
         cur = con.cursor()
         lastOne = cur.execute('SELECT * FROM monthly_stats ORDER BY date DESC').fetchall()
         dataLast = lastOne[0]
-        dataFirst = lastOne[-1] #Number of Lines to Calculate Rate
+        dataFirst = lastOne[100] #Number of Lines to Calculate Rate
 
         #Hours Dif in the last <daraFirst> entries
         timeLast = datetime.fromtimestamp(dataLast[0])
@@ -30,7 +30,7 @@ def home():
         print("Intervalo de Horas : ", dateDiff)
         
         #Hours to Goal Date
-        timeMeta = "2022-12-31 23:59:59"
+        timeMeta = "2023-07-31 23:59:59"
         timeMetaTS = datetime.strptime(timeMeta, "%Y-%m-%d %H:%M:%S").timestamp()
         timeFinal = datetime.fromtimestamp(timeMetaTS)
 
@@ -40,8 +40,8 @@ def home():
 
         print("Horas restantes para a Meta : ", diffFinal)
 
-        totalLast = dataLast[8]
-        totalSoon = dataFirst[8]
+        totalLast = dataLast[10]
+        totalSoon = dataFirst[10]
         totalLastF = float(totalLast.split('K')[0])
         totalSoonF = float(totalSoon.split('K')[0])
         #Followers in the last period
@@ -60,7 +60,7 @@ def home():
         estimatedMil = estimatedTX.split(".")[0]
         estimatedDec = (estimatedTX.split(".")[1])[0]
         estFinal = totalLast + " / " + estimatedMil + "." + estimatedDec + "K"
-        print("TOTAL ESTIMADO EM 30 DE SETEMBRO: ", estFinal)
+        print("TOTAL ESTIMADO EM 30 DE DEZEMBRO: ", estFinal)
         estFinal = estFinal.encode("utf-8")
         find_ports()
 

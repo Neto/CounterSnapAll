@@ -17,8 +17,9 @@ import numpy as np
 import pandas as pd
 
 
+
 # DEF TO APPEND CURRENT NUMBERS TO 'followers.db'
-def save_data(emailC, youtube, youtubeL, twitter, instagram, twitterL, instagramL, total):
+def save_data(emailC, youtube, youtubeL, twitter, instagram, twitterL, instagramL, tiktokB, tiktokL, total):
 
   # Prepare data for saving
   record = {
@@ -30,22 +31,24 @@ def save_data(emailC, youtube, youtubeL, twitter, instagram, twitterL, instagram
     'instagram': instagram,
     'twitterL': twitterL,
     'instagramL': instagramL,
+    'tiktokB': tiktokB,
+    'tiktokL': tiktokL,
     'total':total
   }
 
   # Connect to the database
-  con = sqlite3.connect('followers.db')
+  con = sqlite3.connect('/Users/neto/ARDUINO/CounterSnapAll/followers.db')
   cur = con.cursor()
 
   cur.execute('''
     CREATE TABLE IF NOT EXISTS monthly_stats (
-      date INTEGER, emailC TEXT, youtube TEXT, youtubeL TEXT, twitter TEXT, instagram TEXT, twitterL TEXT, instagramL TEXT, total TEXT
+      date INTEGER, emailC TEXT, youtube TEXT, youtubeL TEXT, twitter TEXT, instagram TEXT, twitterL TEXT, instagramL TEXT, tiktokB TEXT, tiktokL TEXT, total TEXT
     )
   ''')
 
   insert = cur.execute(
-    'INSERT INTO monthly_stats VALUES (%s,"%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s")' % (
-      record['date'], record['emailC'],record['youtube'], record['youtubeL'],record['twitter'], record['instagram'], record['twitterL'], record['instagramL'], record['total']
+    'INSERT INTO monthly_stats VALUES (%s,"%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s")' % (
+      record['date'], record['emailC'],record['youtube'], record['youtubeL'],record['twitter'], record['instagram'], record['twitterL'],  record['instagramL'], record['tiktokB'], record['tiktokL'], record['total']
     )
   )
 
@@ -112,9 +115,23 @@ twitter_count = driver.find_element(By.CSS_SELECTOR,'a[href="/snapdragon_BRA/fol
 driver.get('https://twitter.com/snapdragon_LAT')
 twitter_countL = driver.find_element(By.CSS_SELECTOR,'a[href="/snapdragon_LAT/followers"] > span > span').text
 
+
+## SCRAPE TikTok BRAZIL FOLLOWERS - SELENIUM PYTHON LIBRARY + GECKODRIVE
+driver.get('https://www.tiktok.com/@snapdragon_brasil')
+tiktok_countB = driver.find_element(By.XPATH,'//*[@id="main-content-others_homepage"]/div/div[1]/h3/div[2]/strong').text
+#print(tiktok_countB)
+
+## SCRAPE TikTok LATAM FOLLOWERS - SELENIUM PYTHON LIBRARY + GECKODRIVE
+driver.get('https://www.tiktok.com/@snapdragon_latam')
+tiktok_countL = driver.find_element(By.XPATH,'//*[@id="main-content-others_homepage"]/div/div[1]/h3/div[2]/strong').text
+#print(tiktok_countL)
+
+
+
 # SCRAPE Instagram BRAZIL AND LATIM FOLLOWERS - INSTALOADER PYTHON LIBRARY
 L = instaloader.Instaloader()
 #L.login(user="neto_netohouse",passwd="061231(Counter)")
+#L.login(user="mentor_neto",passwd="638612(password)")
 profile = instaloader.Profile.from_username(L.context, "snapdragon_brasil")
 profile2 = instaloader.Profile.from_username(L.context, "snapdragon_latam")
 instaBR_mil = str(profile.followers)[:3]
@@ -142,198 +159,215 @@ instagram_count = str(instaBrNumber) + "K"
 instaLtNumber = float(instagram_countL.split('K')[0])
 instagram_countL = str(instaLtNumber) + "K"
 
-totalFF = emailNumber + youtubeBrNumber + youtubeLNumber + instaBrNumber + twitterBrNumber + instaLtNumber + twitterLtNumber
+tiktokNumberB = float(tiktok_countB.split('K')[0])/1000
+tiktokNumberL = float(tiktok_countL)/1000
+tiktokNumberB = round (tiktokNumberB, 1)
+tiktokNumberL = round (tiktokNumberL, 1)
+
+
+tiktok_countB = str(tiktokNumberB) + "K"
+tiktok_countL = str(tiktokNumberL) + "K"
+
+totalFF = emailNumber + youtubeBrNumber + youtubeLNumber + instaBrNumber + twitterBrNumber + instaLtNumber + twitterLtNumber + tiktokNumberB + tiktokNumberL
 
 totalFF = round(totalFF,1)
-totalFFS = str(totalFF) + "K"
+
+if len(str(totalFF)) == 6:
+    totalFFS = str(totalFF) + "K"
+else:
+    totalFFS = str(totalFF) + "K"
+
+
+#totalFFS = str(totalFF) + "K"
+
 
 # CALL DEF TO SAVE DATA ON FOLLOWERS.DB FILE
-save_data(email_count, youtube_count, youtube_countL, twitter_count, instagram_count, twitter_countL, instagram_countL, totalFFS)
+save_data(email_count, youtube_count, youtube_countL, twitter_count, instagram_count, twitter_countL, instagram_countL, tiktok_countB, tiktok_countL, totalFFS)
 
-# SAVE GRAPHIC
-# CONNECT TO FOLLOWERS.DB
-con = sqlite3.connect('followers.db')
-cur = con.cursor()
-
-  # Create an empty list for the records
-records = []
-
-    # Get all records
-all_stats = cur.execute('SELECT * FROM monthly_stats ORDER BY date DESC').fetchall()
-
-    # Create an object ("dictionary" in Python) for each record
-for item in all_stats:
-    dt = datetime.fromtimestamp(item[0])
-    record = {
-        'date': dt.strftime('%-d %b'), # Format the date
-        'emailC': item[1].split('K')[0],
-        'youtube': item[2].split('K')[0],
-        'youtubeL': item[3].split('K')[0],
-        'twitter': item[4].split('K')[0],
-        'instagram': item[5].split('K')[0],
-        'twitterL': item[6].split('K')[0],
-        'instagramL': item[7].split('K')[0],
-        'total': item[8].split('K')[0]
-      }
-
-    records.append(record)
-
-grapf1 = pd.DataFrame.from_dict(records)
-
-grEm = grapf1.emailC
-grYB = grapf1.youtube
-grYL = grapf1.youtubeL
-grTB = grapf1.twitter
-grTL = grapf1.twitterL
-grIB = grapf1.instagram
-grIL = grapf1.instagramL
-grT = grapf1.total
-
-# EMAIL
-plt.clf()
-plt.title("Snapdragon Followers Email - Brazil")
-plt.plot(grapf1.date,grapf1.emailC)
-ax = plt.gca()
-every_nth = 2
-for n, label in enumerate(ax.yaxis.get_ticklabels()):
-    if n % every_nth != 0:
-        label.set_visible(False)
-every_nth2 = 5
-for n, label in enumerate(ax.xaxis.get_ticklabels()):
-    if n % every_nth2 != 0:
-        label.set_visible(False)
-ax.invert_xaxis()
-ax.invert_yaxis()
-ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/graphicEm.png')
-
-# YOUTUBE BR
-plt.clf()
-plt.title("Snapdragon Followers YouTube - Brazil")
-plt.plot(grapf1.date,grYB)
-ax = plt.gca()
-every_nth = 2
-for n, label in enumerate(ax.yaxis.get_ticklabels()):
-    if n % every_nth != 0:
-        label.set_visible(False)
-every_nth2 = 5
-for n, label in enumerate(ax.xaxis.get_ticklabels()):
-    if n % every_nth2 != 0:
-        label.set_visible(False)
-ax.invert_xaxis()
-ax.invert_yaxis()
-ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/graphicYB.png')
-
-# YOUTUBE LT
-plt.clf()
-plt.title("Snapdragon Followers Youtube - Latam")
-plt.plot(grapf1.date,grYL)
-ax = plt.gca()
-every_nth = 2
-for n, label in enumerate(ax.yaxis.get_ticklabels()):
-    if n % every_nth != 0:
-        label.set_visible(False)
-every_nth2 = 5
-for n, label in enumerate(ax.xaxis.get_ticklabels()):
-    if n % every_nth2 != 0:
-        label.set_visible(False)
-ax.invert_xaxis()
-ax.invert_yaxis()
-ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/graphicYL.png')
-
-
-
-# TWITTER BR
-plt.clf()
-plt.title("Snapdragon Followers Twitter - Brazil")
-plt.plot(grapf1.date,grTB)
-ax = plt.gca()
-every_nth = 2
-for n, label in enumerate(ax.yaxis.get_ticklabels()):
-    if n % every_nth != 0:
-        label.set_visible(False)
-every_nth2 = 5
-for n, label in enumerate(ax.xaxis.get_ticklabels()):
-    if n % every_nth2 != 0:
-        label.set_visible(False)
-ax.invert_xaxis()
-ax.invert_yaxis()
-ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/graphicTB.png')
-
-# EMAIL
-plt.clf()
-plt.title("Snapdragon Followers Twitter - Latam")
-plt.plot(grapf1.date,grTL)
-ax = plt.gca()
-every_nth = 2
-for n, label in enumerate(ax.yaxis.get_ticklabels()):
-    if n % every_nth != 0:
-        label.set_visible(False)
-every_nth2 = 5
-for n, label in enumerate(ax.xaxis.get_ticklabels()):
-    if n % every_nth2 != 0:
-        label.set_visible(False)
-ax.invert_xaxis()
-ax.invert_yaxis()
-ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/graphicTL.png')
-
-# INSTAGRAM BR
-plt.clf()
-plt.title("Snapdragon Followers Instagram - Brazil")
-plt.plot(grapf1.date,grIB)
-ax = plt.gca()
-every_nth = 2
-for n, label in enumerate(ax.yaxis.get_ticklabels()):
-    if n % every_nth != 0:
-        label.set_visible(False)
-every_nth2 = 5
-for n, label in enumerate(ax.xaxis.get_ticklabels()):
-    if n % every_nth2 != 0:
-        label.set_visible(False)
-ax.invert_xaxis()
-ax.invert_yaxis()
-ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/graphicIB.png')
-
-# INSTAGRAM LT
-plt.clf()
-plt.title("Snapdragon Followers Instagram - Latam")
-plt.plot(grapf1.date,grIL)
-ax = plt.gca()
-every_nth = 2
-for n, label in enumerate(ax.yaxis.get_ticklabels()):
-    if n % every_nth != 0:
-        label.set_visible(False)
-every_nth2 = 5
-for n, label in enumerate(ax.xaxis.get_ticklabels()):
-    if n % every_nth2 != 0:
-        label.set_visible(False)
-ax.invert_xaxis()
-ax.invert_yaxis()
-ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/graphicIL.png')
-
-
-# TOTAL
-plt.clf()
-plt.title("Snapdragon Followers Total - Brazil & Latam")
-plt.plot(grapf1.date,grT)
-ax = plt.gca()
-every_nth = 2
-for n, label in enumerate(ax.yaxis.get_ticklabels()):
-    if n % every_nth != 0:
-        label.set_visible(False)
-every_nth2 = 5
-for n, label in enumerate(ax.xaxis.get_ticklabels()):
-    if n % every_nth2 != 0:
-        label.set_visible(False)
-ax.invert_xaxis()
-ax.invert_yaxis()
-ax.set_facecolor('white')
-plt.savefig('/Library/WebServer/Documents/graphicT.png')
-
-#plt.show()
+## SAVE GRAPHIC
+## CONNECT TO FOLLOWERS.DB
+#con = sqlite3.connect('/Users/neto/ARDUINO/CounterSnapAll/followers.db')
+#cur = con.cursor()
+#
+#  # Create an empty list for the records
+#records = []
+#
+#    # Get all records
+#all_stats = cur.execute('SELECT * FROM monthly_stats ORDER BY date DESC').fetchall()
+#
+#    # Create an object ("dictionary" in Python) for each record
+#for item in all_stats:
+#    dt = datetime.fromtimestamp(item[0])
+#    record = {
+#        'date': dt.strftime('%-d %b'), # Format the date
+#        'emailC': item[1].split('K')[0],
+#        'youtube': item[2].split('K')[0],
+#        'youtubeL': item[3].split('K')[0],
+#        'twitter': item[4].split('K')[0],
+#        'instagram': item[5].split('K')[0],
+#        'twitterL': item[6].split('K')[0],
+#        'instagramL': item[7].split('K')[0],
+#        'total': item[8].split('K')[0]
+#      }
+#
+#    records.append(record)
+#
+#grapf1 = pd.DataFrame.from_dict(records)
+#
+#grEm = grapf1.emailC
+#grYB = grapf1.youtube
+#grYL = grapf1.youtubeL
+#grTB = grapf1.twitter
+#grTL = grapf1.twitterL
+#grIB = grapf1.instagram
+#grIL = grapf1.instagramL
+#grT = grapf1.total
+#
+## EMAIL
+#plt.clf()
+#plt.title("Snapdragon Followers Email - Brazil")
+#plt.plot(grapf1.date,grapf1.emailC)
+#ax = plt.gca()
+#every_nth = 2
+#for n, label in enumerate(ax.yaxis.get_ticklabels()):
+#    if n % every_nth != 0:
+#        label.set_visible(False)
+#every_nth2 = 5
+#for n, label in enumerate(ax.xaxis.get_ticklabels()):
+#    if n % every_nth2 != 0:
+#        label.set_visible(False)
+#ax.invert_xaxis()
+#ax.invert_yaxis()
+#ax.set_facecolor('white')
+#plt.savefig('/Library/WebServer/Documents/graphicEm.png')
+#
+## YOUTUBE BR
+#plt.clf()
+#plt.title("Snapdragon Followers YouTube - Brazil")
+#plt.plot(grapf1.date,grYB)
+#ax = plt.gca()
+#every_nth = 2
+#for n, label in enumerate(ax.yaxis.get_ticklabels()):
+#    if n % every_nth != 0:
+#        label.set_visible(False)
+#every_nth2 = 5
+#for n, label in enumerate(ax.xaxis.get_ticklabels()):
+#    if n % every_nth2 != 0:
+#        label.set_visible(False)
+#ax.invert_xaxis()
+#ax.invert_yaxis()
+#ax.set_facecolor('white')
+#plt.savefig('/Library/WebServer/Documents/graphicYB.png')
+#
+## YOUTUBE LT
+#plt.clf()
+#plt.title("Snapdragon Followers Youtube - Latam")
+#plt.plot(grapf1.date,grYL)
+#ax = plt.gca()
+#every_nth = 2
+#for n, label in enumerate(ax.yaxis.get_ticklabels()):
+#    if n % every_nth != 0:
+#        label.set_visible(False)
+#every_nth2 = 5
+#for n, label in enumerate(ax.xaxis.get_ticklabels()):
+#    if n % every_nth2 != 0:
+#        label.set_visible(False)
+#ax.invert_xaxis()
+#ax.invert_yaxis()
+#ax.set_facecolor('white')
+#plt.savefig('/Library/WebServer/Documents/graphicYL.png')
+#
+#
+#
+## TWITTER BR
+#plt.clf()
+#plt.title("Snapdragon Followers Twitter - Brazil")
+#plt.plot(grapf1.date,grTB)
+#ax = plt.gca()
+#every_nth = 2
+#for n, label in enumerate(ax.yaxis.get_ticklabels()):
+#    if n % every_nth != 0:
+#        label.set_visible(False)
+#every_nth2 = 5
+#for n, label in enumerate(ax.xaxis.get_ticklabels()):
+#    if n % every_nth2 != 0:
+#        label.set_visible(False)
+#ax.invert_xaxis()
+#ax.invert_yaxis()
+#ax.set_facecolor('white')
+#plt.savefig('/Library/WebServer/Documents/graphicTB.png')
+#
+## EMAIL
+#plt.clf()
+#plt.title("Snapdragon Followers Twitter - Latam")
+#plt.plot(grapf1.date,grTL)
+#ax = plt.gca()
+#every_nth = 2
+#for n, label in enumerate(ax.yaxis.get_ticklabels()):
+#    if n % every_nth != 0:
+#        label.set_visible(False)
+#every_nth2 = 5
+#for n, label in enumerate(ax.xaxis.get_ticklabels()):
+#    if n % every_nth2 != 0:
+#        label.set_visible(False)
+#ax.invert_xaxis()
+#ax.invert_yaxis()
+#ax.set_facecolor('white')
+#plt.savefig('/Library/WebServer/Documents/graphicTL.png')
+#
+## INSTAGRAM BR
+#plt.clf()
+#plt.title("Snapdragon Followers Instagram - Brazil")
+#plt.plot(grapf1.date,grIB)
+#ax = plt.gca()
+#every_nth = 2
+#for n, label in enumerate(ax.yaxis.get_ticklabels()):
+#    if n % every_nth != 0:
+#        label.set_visible(False)
+#every_nth2 = 5
+#for n, label in enumerate(ax.xaxis.get_ticklabels()):
+#    if n % every_nth2 != 0:
+#        label.set_visible(False)
+#ax.invert_xaxis()
+#ax.invert_yaxis()
+#ax.set_facecolor('white')
+#plt.savefig('/Library/WebServer/Documents/graphicIB.png')
+#
+## INSTAGRAM LT
+#plt.clf()
+#plt.title("Snapdragon Followers Instagram - Latam")
+#plt.plot(grapf1.date,grIL)
+#ax = plt.gca()
+#every_nth = 2
+#for n, label in enumerate(ax.yaxis.get_ticklabels()):
+#    if n % every_nth != 0:
+#        label.set_visible(False)
+#every_nth2 = 5
+#for n, label in enumerate(ax.xaxis.get_ticklabels()):
+#    if n % every_nth2 != 0:
+#        label.set_visible(False)
+#ax.invert_xaxis()
+#ax.invert_yaxis()
+#ax.set_facecolor('white')
+#plt.savefig('/Library/WebServer/Documents/graphicIL.png')
+#
+#
+## TOTAL
+#plt.clf()
+#plt.title("Snapdragon Followers Total - Brazil & Latam")
+#plt.plot(grapf1.date,grT)
+#ax = plt.gca()
+#every_nth = 2
+#for n, label in enumerate(ax.yaxis.get_ticklabels()):
+#    if n % every_nth != 0:
+#        label.set_visible(False)
+#every_nth2 = 5
+#for n, label in enumerate(ax.xaxis.get_ticklabels()):
+#    if n % every_nth2 != 0:
+#        label.set_visible(False)
+#ax.invert_xaxis()
+#ax.invert_yaxis()
+#ax.set_facecolor('white')
+#plt.savefig('/Library/WebServer/Documents/graphicT.png')
+#
+##plt.show()
