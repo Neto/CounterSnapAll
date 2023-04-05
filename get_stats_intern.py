@@ -72,11 +72,17 @@ with sync_playwright() as p:
 
 
 ## SCRAPE TikTok BRAZIL FOLLOWERS - SELENIUM PYTHON LIBRARY + GECKODRIVE
-
 driver.get('https://www.tiktok.com/@snapdragon_brasil')
-tiktok_countB = driver.find_element(By.XPATH,'//*[@id="main-content-others_homepage"]/div/div[1]/h2[1]/div[2]/strong').text
-
+tiktok_countB = driver.find_element(By.XPATH,'//*[@id="main-content-others_homepage"]/div/div[1]/h3/div[2]/strong').text
 print(tiktok_countB)
+
+## SCRAPE TikTok LATAM FOLLOWERS - SELENIUM PYTHON LIBRARY + GECKODRIVE
+driver.get('https://www.tiktok.com/@snapdragon_latam')
+tiktok_countL = driver.find_element(By.XPATH,'//*[@id="main-content-others_homepage"]/div/div[1]/h3/div[2]/strong').text
+print(tiktok_countL)
+
+tiktokNumberB = float(tiktok_countB.split('K')[0])
+print(tiktokNumberB)
 
 
 

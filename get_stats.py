@@ -159,7 +159,7 @@ instagram_count = str(instaBrNumber) + "K"
 instaLtNumber = float(instagram_countL.split('K')[0])
 instagram_countL = str(instaLtNumber) + "K"
 
-tiktokNumberB = float(tiktok_countB.split('K')[0])/1000
+tiktokNumberB = float(tiktok_countB.split('K')[0])
 tiktokNumberL = float(tiktok_countL)/1000
 tiktokNumberB = round (tiktokNumberB, 1)
 tiktokNumberL = round (tiktokNumberL, 1)
