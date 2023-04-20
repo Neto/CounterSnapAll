@@ -3,10 +3,10 @@
 /dev/tty.usbserial-34410: 
 /dev/tty.usbmodem3424101: 
 /dev/tty.usbmodem34301: 
-/dev/tty.usbserial-34410: 89693
-Intervalo de Dias :  30 days, 6:00:03
-Intervalo de Horas :  726.0
-Horas restantes para a Meta :  2826.0
-Numero de Followers no período :  57500.0
-Rate de Conquista de Followers no período :  79.2
-TOTAL ESTIMADO EM 30 DE DEZEMBRO:  1105.5K / 1329.3K
+/dev/tty.usbserial-34410: 64456
+Intervalo de Dias :  41 days, 0:00:16
+Intervalo de Horas :  984.0
+Horas restantes para a Meta :  2478.0
+Numero de Followers no período :  105100.0
+Rate de Conquista de Followers no período :  106.81
+TOTAL ESTIMADO EM 30 DE DEZEMBRO:  1158.3K / 1422.9K
