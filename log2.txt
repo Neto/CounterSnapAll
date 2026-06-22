@@ -1,0 +1,12 @@
+/dev/cu.usbmodem21544101: 
+/dev/cu.usbmodem21544201: 
+/dev/cu.usbserial-215410: 
+/dev/cu.usbmodem21544101: 
+/dev/cu.usbmodem21544201: 
+/dev/cu.usbmodem21544201: 
+Intervalo de Dias :  46 days, 5:59:46
+Intervalo de Horas :  1110.0
+Horas restantes para a Meta :  -174.0
+Numero de Followers no período :  227500.0
+Rate de Conquista de Followers no período :  204.95
+TOTAL ESTIMADO EM 31 DE JULHO:  1718.6K / 1682.9K
